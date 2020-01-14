@@ -1,0 +1,223 @@
+/* ---- Banner ---- */
+.banner
+    margin: 0 auto
+    clear: both
+    padding-top: 15px
+    position: relative
+    overflow: hidden
+    background: url("https://imagizer.imageshack.com/img924/4941/HHzRtE.gif"), linear-gradient(to bottom, #7bb3ca, transparent)
+    background-size: cover
+    background-position: top center
+    height: 100rem
+
+    @media only screen and (max-width: 56.25em)
+        height: 100%
+        margin: 5rem 0
+
+.banner-width
+    position: relative
+
+.banner-h1
+    text-align: center
+    margin-top: 20%
+
+@media only screen and (max-width: 85rem)
+    .banner-h1
+        margin-top: 10%
+
+.banner-h1 h1
+    font-family: 'Dancing Script', cursive
+    font-size: 15rem
+    color: #d22029
+    text-align: center
+    line-height: 1
+    font-weight: 300
+    margin: 0
+    padding: 0
+    -webkit-animation: slideInTop 1s ease-in-out
+    animation: slideInTop 1s ease-in-out
+    position: relative
+    z-index: 9
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, .25), 0 0 15px rgba(255, 255, 255, .6)
+
+@media only screen and (max-width: 950px)
+    .banner-h1 h1
+        font-size: 10rem
+
+@media only screen and (max-width: 56.25em)
+    .banner-h1 h1
+        margin-top: 20%
+        font-size: 10rem
+
+@media only screen and (max-width: 37.5em)
+    .banner-h1 h1
+        font-size: 8rem
+        padding-top: 25%
+
+.banner-desk
+    width: 50rem
+    position: absolute
+    right: 50px
+    top: 160px
+    -webkit-animation: slideInLeft 1s 1s ease-in-out
+    animation: slideInLeft 1s 1s ease-in-out
+    animation-fill-mode: backwards
+
+@media only screen and (max-width: 56.25em)
+    .banner-desk
+        position: relative
+        width: 25rem
+        top: 0
+        left: 0
+        right: 0
+        margin: 0 auto
+        margin-top: 20px
+
+.banner-text-bk
+    text-align: center
+    position: absolute
+    color: #ffffff
+    z-index: 2
+    left: 10rem
+    top: 25rem
+    -webkit-animation: slideInRight 1s 1s ease-in-out
+    animation: slideInRight 1s 1s ease-in-out
+    animation-fill-mode: backwards
+
+@media only screen and (max-width: 56.25em)
+    .banner-text-bk
+        left: 0
+        top: 0
+        margin-top: 20px
+        position: relative
+
+.banner-text h2
+    font-size: 9rem
+    font-weight: 600
+    margin: 0
+    padding: 0
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .2)
+
+@media only screen and (max-width: 37.5em)
+    .banner-text h2
+        font-size: 80px
+
+.banner-text h2 span
+    font-size: 3.5rem
+    font-weight: 600
+    margin: 0
+    padding: 0
+    vertical-align: top
+
+@media only screen and (max-width: 37.5em)
+    .banner-text h2 span
+        font-size: 3rem
+
+.banner-text h3
+    font-size: 4.5rem
+    text-transform: uppercase
+    margin: 0
+    letter-spacing: 1rem
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, .2)
+
+@media only screen and (max-width: 37.5em)
+    .banner-text h3
+        font-size: 3.5rem
+
+.banner-text p
+    color: #ffffff
+    text-align: center
+    background-color: #d22029
+    width: 30rem
+    margin: 0 auto
+    padding: 1.2rem 1rem
+    font-size: 24px
+    border-radius: 5px
+    z-index: 9
+    text-transform: uppercase
+    margin-top: 1rem
+
+@media only screen and (max-width: 56.25em)
+    .banner-text p
+        font-size: 2rem
+        padding: 1.2rem 0
+
+.banner-text::after
+    position: absolute
+    content: ""
+    background: #7bb3ca
+    padding: 0
+    bottom: 28%
+    left: -1rem
+    right: -1rem
+    z-index: -1
+    height: 56%
+
+    @media only screen and (max-width: 56.25em)
+        bottom: 25%
+        height: 75%
+
+@media only screen and (max-width: 37.5em)
+    .banner__main-img
+        margin-top: 8rem
+        transform: scale(1.2)
+
+.header-box
+    width: 20rem
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #ffffff
+    z-index: 10
+    position: absolute
+
+@media only screen and (max-width: 37.5em)
+    .header-box
+        width: 12rem
+
+@keyframes slideInRight
+    0%
+        transform: translateX(-300%)
+        opacity: 0
+
+    80%
+        transform: translateX(1.5rem)
+        opacity: 1
+
+    100%
+        transform: translateX(0)
+
+@keyframes slideInLeft
+    0%
+        transform: translateX(300%)
+        opacity: 0
+
+    80%
+        transform: translateX(-1.5rem)
+        opacity: 1
+
+    100%
+        transform: translateX(0)
+
+@keyframes slideInTop
+    0%
+        transform: translateY(-300%)
+        opacity: 0
+
+    80%
+        transform: translateY(1.5rem)
+        opacity: 1
+
+    100%
+        transform: translateY(0)
+
+.sitStand-mobile
+    display: none
+
+@media only screen and (max-width: 37.5em)
+    .sitStand-mobile
+        display: block
+
+@media only screen and (max-width: 37.5em)
+    .sitStand-desktop
+        display: none

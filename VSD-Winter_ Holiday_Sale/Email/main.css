@@ -1,0 +1,271 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.email-background {
+    background: #ffffff;
+    margin: 0 auto;
+    background: #eeeeee;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: nudista-web, sans-serif;
+}
+
+.email-container {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    font-style: normal;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table,
+table td {
+    border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 2px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.header-text {
+    color: #053254;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.product-name {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    color: #262626;
+}
+
+.product-name span {
+    position: relative;
+    font-size: 40%;
+    line-height: 0;
+    vertical-align: baseline;
+    top: -1.2em;
+    font-weight: normal;
+}
+
+.product-price {
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.5;
+    color: #cd2222;
+}
+
+.product-price span {
+    color: #053254;
+}
+
+.product-mat {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.button {
+    background-color: #ee9022;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    -webkit-text-size-adjust: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button-sml {
+    background-color: #cd2222;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 135px;
+    -webkit-text-size-adjust: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.info-h3 {
+    color: #cd2222;
+    font-size: 40px;
+    line-height: 1.2;
+}
+
+.info-h4 {
+    color: #053254;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.info-ul {
+    margin-right: 10px;
+}
+
+ul li {
+    color: #cd2222;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.3;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+ul li span {
+    color: #262626;
+}
+
+.tel {
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: center !important;
+}
+
+
+.footer-text {
+    margin: auto;
+    text-align: center;
+}
+
+.terms {
+    font-size: 15px;
+    color: #262626;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+.limited {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1baec6;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.footer-text a {
+    text-decoration: underline;
+}
+
+.links {
+    color: #262626;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.call a,
+.call p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.call .tel {
+    font-size: 30px;
+}
+
+.tel {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: center !important;
+}
+
+.exp {
+    font-weight: bold;
+    font-size: 23px;
+}
+
+.reviews td {
+    padding: 0 5px;
+}
+
+.accessories {
+    text-align: right;
+    padding-right: 10px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+.header-small {
+    display: none;
+}

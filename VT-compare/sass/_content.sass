@@ -1,0 +1,367 @@
+/* ------  HEADER  ------ */
+
+.header
+    background-image: url(../img/header-bk.jpg)
+    background-size: cover
+    background-position: top center
+    height: 90rem
+
+    &__logo
+        display: flex
+        justify-content: center
+        margin-top: 6rem
+        
+        img
+            @media only screen and (max-width: $bp-small)
+                width: 80%
+                margin-left: auto
+                margin-right: auto
+
+    &__text
+        padding: 0 1.5rem
+
+    &__secondary
+        font-size: 5rem
+        text-align: center
+        color: $color-black
+        font-style: italic
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 3.3rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 3rem
+
+    &__primary
+        font-size: 6rem
+        text-align: center
+        color: $color-orange
+        text-transform: uppercase
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 5rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 4rem
+
+    &__images
+        display: flex
+        justify-content: space-between
+        align-items: center
+
+        img
+            @media only screen and (max-width: $bp-large)
+                width: 45%
+
+
+
+/* ------  TABLE  ------ */
+
+.table
+    display: flex
+    justify-content: space-between
+    text-align: center
+
+    @media only screen and (max-width: $bp-small)
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: -70rem
+
+    @media only screen and (max-width: $bp-smallest)
+        margin-top: -68rem
+
+    &__column
+        width: 57.5rem
+        margin-top: -65rem
+        position: relative
+
+        @media only screen and (max-width: $bp-medium)
+            margin-top: -55rem
+
+        @media only screen and (max-width: $bp-small)
+            margin-top: 10rem    
+
+    &__background
+        background: $color-white
+        box-shadow: 3px 3px 10px rgba($color-black, .1)
+        margin: 0 1rem
+        margin-top: 10rem
+        border-radius: 3rem
+        overflow: hidden
+
+        @media only screen and (max-width: $bp-small)
+            margin-top: 3rem
+
+    &__product
+        margin: 0 auto
+        width: 100%
+
+        @media only screen and (max-width: $bp-medium)
+            width: 90%
+        
+    &__logo
+        height: 12rem
+        margin: 2rem auto
+        display: flex
+        align-items: center
+
+        img
+            width: 90%
+            margin: 0 auto
+
+    &__product-name
+        height: 15rem
+        width: 100%
+        display: flex
+        justify-content: center
+        align-items: center
+
+        &--h3
+            font-size: 4rem
+            font-weight: 300
+            font-style: italic
+
+            @media only screen and (max-width: $bp-small)
+                font-size: 3.2rem
+
+            @media only screen and (max-width: $bp-smallest)
+                font-size: 3.2rem
+
+    &__white
+        min-height: 28rem
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        background: $color-white
+
+        @media only screen and (max-width: $bp-small)
+            min-height: 25rem
+
+    &__gray
+        min-height: 28rem
+        display: flex
+        align-items: center
+        flex-direction: column
+        justify-content: center
+        background: $color-gray
+        border-radius: 10rem 0 10rem 0
+
+        @media only screen and (max-width: $bp-small)
+            min-height: 25rem
+
+    &__text 
+        padding: 0 3rem
+
+        @media only screen and (max-width: $bp-small)
+            padding: 0 1.5rem
+
+    &__title
+        font-size: 3.4rem
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 3rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 2.8rem
+
+    &__p
+        font-size: 2.7rem
+        font-style: italic
+        margin-top: 1rem
+        line-height: 1.3
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 2.4rem
+
+    &__text-small
+        font-size: 2.4rem
+        display: block
+        margin-top: 1rem
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 2.2rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 1.8rem
+
+    &__flex
+        display: flex
+        align-items: center
+        margin-top: 1.5rem
+
+    &__updown
+        margin-left: 5rem
+
+        img
+            width: 60%
+
+    &__warranty
+        text-align: center
+        display: flex
+        justify-content: center
+        align-items: center
+
+        img
+            @media only screen and (max-width: $bp-small)
+                width: 40%
+
+
+    &__price
+        font-size: 6.5rem
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 6rem
+
+        @media only screen and (max-width: $bp-smallest)
+            margin-bottom: 5rem
+
+
+.colors
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+        width: 80%
+        margin: 0 auto
+
+    &__name
+        font-size: 1.6rem
+        font-style: italic
+        margin-top: 1rem
+
+    &__single
+        margin-left: auto
+        margin-right: auto
+
+        @media only screen and (max-width: $bp-large)
+            width: 55%
+
+        @media only screen and (max-width: $bp-medium)
+            width: 35%
+
+        @media only screen and (max-width: $bp-small)
+            width: 45%
+
+
+
+/* ------  MIDDLE  ------ */
+
+.middle
+    text-align: center
+    position: relative
+
+    &__text
+        font-size: 4rem
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 3rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 2rem
+
+    img
+        margin: 0 auto
+        width: 100%
+            
+
+
+
+/* ------  PRODUCTS  ------ */
+
+.products
+    max-width: 160rem
+    margin-left: auto
+    margin-right: auto
+    display: flex
+
+    @media only screen and (max-width: $bp-medium)
+        flex-wrap: wrap
+
+    &__padding
+        padding: 2rem
+        padding-bottom: 3rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        @media only screen and (max-width: $bp-small)
+            padding-bottom: 4rem
+
+    &__box
+        width: 25%
+        margin: 0 1rem
+        background: $color-white
+        box-shadow: 3px 3px 10px rgba($color-black, .1)
+
+        @media only screen and (max-width: $bp-medium)
+            width: 47%
+            margin: 1.5rem 1.5%
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+            margin: 1.5rem 5rem
+
+        @media only screen and (max-width: $bp-smallest)
+            margin: 1rem 1.5rem
+
+    &__img
+        img
+            width: 100%
+
+    &__title
+        height: 4.5rem
+
+        @media only screen and (max-width: $bp-small)
+            height: 100%
+            margin-bottom: 3rem
+
+        @media only screen and (max-width: $bp-smallest)
+            margin-bottom: 1.5rem
+
+        h3
+            font-size: 2rem
+
+            @media only screen and (max-width: $bp-small)
+                font-size: 2.5rem
+
+
+.products__colors
+    margin: 1rem
+    margin-bottom: 2rem
+    min-height: 5rem
+
+    img
+        max-width: 4.5rem
+        width: 100%
+        margin: 0 .2rem
+
+        @media only screen and (max-width: $bp-small)
+            max-width: 7rem
+
+        @media only screen and (max-width: $bp-smallest)
+            max-width: 4.5rem
+
+        
+
+
+
+/* ------  FOOTER  ------ */
+
+.footer
+    background: $color-orange
+    color: $color-white
+    text-align: center
+    padding: 4rem 0
+
+    &__text
+        padding: 0 1.5rem
+
+    h3
+        font-size: 2.5rem
+        font-weight: 300
+
+    p
+        font-size: 1.6rem

@@ -1,0 +1,81 @@
+$color-blue: #1baec6
+$color-orange: #ee9022
+
+$color-black: #262626
+$color-white: #ffffff
+
+$shadow-dark: 0 2rem 6rem rgba(0,0,0,.3)
+$shadow-light: 0 2rem 5rem rgba(0,0,0,.06)
+
+@mixin clearfix
+    content: ""
+    clear: both
+    display: table    
+
+
+$bp-largest: 75em     // 1200px
+$bp-large: 68.75em     // 1100px
+$bp-medium: 56.25em     // 900px
+$bp-small: 37.5em     // 600px
+$bp-smallest: 31.25em     // 500px
+
+$font-family-serif: 'nudista-web', sans-serif
+$font-family-sans-serif: 'Libre Baskerville', serif
+
+
+    
+*
+    margin: 0
+    padding: 0
+
+*,
+*::before,
+*::after
+    box-sizing: inherit
+
+html
+    box-sizing: border-box
+    font-size: 65.5%  // 1rem = 10px
+
+    @media only screen and (max-width: $bp-large)
+        font-size: 50%
+
+
+body
+    font-family: $font-family-serif
+    font-weight: 400
+    line-height: 1.6
+    font-size: 1.6rem
+
+a
+    text-decoration: none
+
+.width
+    max-width: 1200px
+    margin: auto
+
+h1,
+h2,
+h3,
+h4,
+h5
+    line-height: 1.2
+    text-decoration: none
+    text-align: center
+
+p
+    font-size: 1.6rem
+    line-height: 1.2
+    margin: 0
+    padding: 0
+    text-decoration: none
+
+img
+    max-width: 100%
+    display: block
+    border: none
+    text-align: center
+
+a
+    text-decoration: none
+    color: $color-black

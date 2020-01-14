@@ -1,0 +1,72 @@
+/* ------  BUTTONS  ------ */
+
+.btn
+    &,
+    &:link,
+    &:visited
+        padding: 1.7rem 2.7rem
+        border-radius: 100px
+        font-weight: 600
+        font-size: 1.8rem
+        text-align: center
+        cursor: pointer
+        transition: all .3s ease
+        position: relative
+        display: inline-block
+
+        @media only screen and (max-width: $bp-small)
+            padding: 1.2rem 2rem
+            font-size: 1.5rem
+
+        &:hover
+            transform: translateY(-5px) scale(1.02)
+            box-shadow: 2px 2px 15px rgba($color-black, .3)
+
+        &:active,
+        &:focus
+            transform: translateY(0) scale(1)
+            box-shadow: 2px 2px 5px rgba($color-black, .2)
+
+.btn-primary
+    color: $color-white
+    background: $color-orange
+    border: 3px solid $color-orange
+    box-shadow: 2px 2px 5px rgba($color-black, .2)
+
+    @media only screen and (max-width: $bp-small)
+        border: 2px solid $color-orange
+
+    &:hover
+        box-shadow: 2px 2px 15px rgba($color-black, .3)
+
+    &:active
+        box-shadow: 2px 2px 5px rgba($color-black, .2)
+
+.btn-secondary
+    color: $color-orange
+    background: transparent
+    border: 3px solid $color-orange
+
+    @media only screen and (max-width: $bp-small)
+        border: 2px solid $color-orange
+
+    &:hover
+        color: $color-white
+        background: $color-orange
+
+.btn-small
+    padding: 1.3rem 2.3rem
+    font-size: 1.5rem
+
+.btn-fake
+    padding: 1.7rem 2.7rem
+    border-radius: 100px
+    font-weight: 600
+    font-size: 1.8rem
+    text-align: center
+    cursor: pointer
+    position: relative
+    display: inline-block
+    color: $color-orange
+    background: transparent
+    border: 3px solid $color-orange
