@@ -1,0 +1,178 @@
+.email-background {
+    background: #ffffff;
+    margin: 0 auto;
+    background: #eeeeee;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.email-container {
+    font-family: 'Muli', sans-serif, "Century Gothic", "CenturyGothic", "AppleGothic";
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    font-style: normal;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table, table td { 
+    border-collapse: collapse;
+}
+
+h1, h2, h3, h4, h5 {
+    padding: 2px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1 {
+    font-size: 57px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h3 {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.button {
+    background-color:#ee9022;
+    border-radius:10px;
+    color:#ffffff;
+    display:inline-block;
+    font-size:28px;
+    line-height:76px;
+    text-align:center;
+    text-decoration:none;
+    width:240px;
+    -webkit-text-size-adjust:none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.footer-text {
+    margin: auto;
+    text-align: center;
+}
+
+.terms {
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+.limited {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1baec6;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.footer-text a {
+    text-decoration: underline;
+}
+
+.links {
+    color:#000000;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+
+
+.gift {
+    color: #1baec6;
+    font-style: italic;
+    font-size: 27px;
+    text-align: center;
+}
+
+.gift-p {
+    font-size: 18.5px;
+    text-align: center;
+}
+
+.save {
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #1baec6;
+    font-weight: 600;
+    text-align: center;
+}
+
+.colors {
+    text-align: center;
+    margin: auto;
+    color: #000000;
+    font-size: 15px;
+}
+
+.instead {
+    font-size: 24px;
+    color: #000000;
+    text-transform: uppercase;
+    line-height: 1.23;
+    text-align: center;
+}
+
+.code {
+    background-color: #1baec6;
+    color: #ffffff;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.code span {
+    display: block;
+    font-weight: bold;
+}
+

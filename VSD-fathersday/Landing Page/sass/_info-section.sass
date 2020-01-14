@@ -1,0 +1,147 @@
+/*  -----   INFO SECTION   ----- */
+
+
+.info-title
+    font-size: 4rem
+    color: #cd2222
+    padding: 20px 5%
+
+@media only screen and (max-width: $bp-small)
+    .info-title
+        padding: 20px 5px 5px
+        margin: 0
+        font-size: 3rem
+
+@media only screen and (max-width: $bp-medium)
+    .section__info
+        width: 100%
+
+
+.section__img
+    padding-bottom: 20px
+    z-index: 10
+
+.section__img--drop-left
+    margin-left: 10px
+
+.section__img--drop-right
+    margin-left: 10px
+
+@media only screen and (max-width: $bp-medium)
+    .section__img
+        -webkit-box-flex: 0
+        -ms-flex: 0 0 80%
+        flex: 0 0 80%
+        margin: 30px auto
+        display: flex
+        justify-content: center
+
+
+.section__info ul
+    padding-right: 20px
+
+    @media only screen and (max-width: $bp-medium)
+        margin-left: 3rem
+
+.section__info h2
+    font-size: 20px
+    font-weight: bold
+    margin: 1rem 0
+
+.section__info li
+    text-align: left
+    margin-bottom: 15px
+    line-height: 1.3
+    color: #cd2222
+    padding: 0 1rem
+
+.blue-black h2
+    color: #053254
+
+.blue-black li
+    color: #cd2222
+
+.blue-black li span
+    color: #000000
+
+.white h2
+    color: #ffffff
+
+.white li
+    color: #cd2222
+
+.white li span
+    color: #ffffff
+
+.section__img--blue
+    -webkit-box-shadow: 10px 2re10pxm 0 #053254
+    box-shadow: 10px 10px 0 #053254
+
+.section__img--red
+    -webkit-box-shadow: -10px 10px 0 #cd2222
+    box-shadow: -10px 10px 0 #cd2222
+
+.section__half
+    -webkit-box-flex: 0
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+
+@media only screen and (max-width: $bp-medium)
+    .section__half
+        -webkit-box-flex: 0
+        -ms-flex: 0 0 100%
+        flex: 0 0 100%
+
+
+.info-container
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: justify
+    -ms-flex-pack: justify
+    justify-content: space-between
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    margin: 0 20px
+
+@media only screen and (max-width: $bp-small)
+    .info-container
+        margin: 0
+
+
+@media only screen and (max-width: $bp-medium)
+    .info-container
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+
+
+.row
+    margin: 0 auto
+    max-width: 120rem
+    overflow: hidden
+
+.row-2
+    margin: 0 auto
+    max-width: 120rem
+    overflow: hidden
+
+    @media only screen and (max-width: $bp-small)
+        padding: 0
+
+
+.blue-bk
+    margin: 10rem 0
+    padding: 10rem 0
+    background-color: #053254
+    -webkit-transform: skewY(-4deg)
+    transform: skewY(-4deg)
+    
+@media only screen and (max-width: $bp-medium)
+    .blue-bk
+        padding: 10rem 0
+
+
+.blue-bk > *
+    -webkit-transform: skewY(4deg)
+    transform: skewY(4deg)

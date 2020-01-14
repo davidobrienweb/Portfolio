@@ -1,0 +1,40 @@
+.btn-cont
+    text-align: center
+    
+.btn:link,
+.btn:visited
+    background-color: #ee9022
+    border-radius: 0.5rem
+    margin-left: auto
+    margin-right: auto
+    cursor: pointer
+    color: #ffffff
+    text-decoration: none
+    cursor: pointer
+    text-align: center
+    transition: all .4s ease
+
+.btn:hover
+    box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, .2)
+    border-radius: 10rem
+    transform: translateY(-2px)
+
+.btn:active,
+.btn:focus
+    box-shadow: 0 3px 3px rgba(0, 0, 0, .2)
+    outline: none
+    transform: translateY(2px)
+
+.btn-sml:link,
+.btn-sml:visited
+    font-size: 1.6rem
+    padding: 1.5rem 3.5rem
+
+    @media only screen and (max-width: $bp-small)
+        font-size: 1.5rem
+        padding: 1rem 2.3rem
+
+.btn-lrg:link,
+.btn-lrg:visited
+    font-size: 25px
+    padding: 2.5rem 4rem
