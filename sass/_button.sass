@@ -1,0 +1,80 @@
+.btn
+    padding: 1.3rem 3rem
+    font-size: 1.6rem
+    text-decoration: none
+    border-radius: 5rem
+    margin-top: 2rem
+    margin-right: 2rem
+    transition: all .3s ease-in-out
+
+    &--grad
+        background: $color-primary
+        color: $color-white
+        background-image: linear-gradient(to right, $color-primary 0%, $color-primary-light 51%, $color-primary 100%)
+        background-size: 200% auto
+        
+        &:hover
+            background-position: right center
+
+    &--arrow 
+        &::after
+            font-family: fontAwesome
+            content: '\f054'
+            position: relative
+            margin-left: 1rem
+            color: inherit
+            font-size: 1.25rem
+            left: 0
+            transition: all .3s ease-in-out
+
+        &:hover::after
+            left: .35em 
+
+    &--resume
+        text-transform: uppercase
+
+        &::after
+            content: '\f019'
+            font-family: fontAwesome
+            position: relative
+            margin-left: 1.5rem
+            color: inherit
+            font-size: 1.25rem
+            top: -.2rem 
+            transition: all .3s ease-in-out
+
+        &:hover::after
+            top: .05rem
+
+    &--white
+        color: $color-secondary
+        background: $color-white
+
+        &:hover
+            color: $color-primary
+
+
+.buttons-container
+    display: flex
+    margin-top: 3rem
+
+    @media only screen and (max-width: $bp-largest)
+        flex-wrap: wrap
+        justify-content: flex-start
+        margin-top: 3rem
+
+    @media only screen and (max-width: $bp-small)
+        flex-wrap: wrap
+        justify-content: space-evenly
+        margin-top: 3rem
+        width: 80%
+        margin-left: auto
+        margin-right: auto
+
+    @media only screen and (max-width: $bp-smallest)
+        flex-wrap: wrap
+        justify-content: center
+        margin-top: 3rem
+        width: 100%
+
+

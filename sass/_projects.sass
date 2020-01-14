@@ -1,0 +1,273 @@
+/* ----- OVERVIEW ----- */
+    
+.overview
+    @include clearfix
+    
+    @media only screen and (max-width: $bp-medium)
+        flex-wrap: wrap
+
+    &__h2
+        font-size: 6rem
+        font-weight: 600
+        text-align: left
+        line-height: 1
+        
+        @media only screen and (max-width: $bp-small)
+            text-align: center
+    
+    &__h3
+        font-size: 3rem
+        font-weight: 400
+        text-align: left
+        font-style: italic
+        margin-top: 1rem
+
+        @media only screen and (max-width: $bp-small)
+            text-align: center
+
+    &__p
+        max-width: 75rem
+
+        @media only screen and (max-width: $bp-medium)
+            margin-left: auto
+            margin-right: auto
+            max-width: 100%
+
+    &__h4
+        font-size: 4rem
+        font-weight: 400
+        text-transform: uppercase
+    
+        @media only screen and (max-width: $bp-small)
+            text-align: center
+
+    &__span
+        color: $color-primary
+        display: block
+        font-weight: 700
+
+    &__logo
+        max-width: 40rem
+
+        @media only screen and (max-width: $bp-large)
+            max-width: 35rem
+
+        @media only screen and (max-width: $bp-medium)
+            max-width: 40rem
+
+        @media only screen and (max-width: $bp-small)
+            max-width: 35rem
+            margin-left: auto
+            margin-right: auto
+            display: flex
+
+    &__title-container
+        float: left
+        width: 50%
+        padding-left: 5rem
+        margin-bottom: 10rem
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            margin-bottom: 7rem
+
+        @media only screen and (max-width: $bp-small)
+            padding-left: 0
+            margin-bottom: 5rem
+
+    &__text-container
+        float: right
+        width: 50%
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            padding: 0 5rem
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+            padding: 0 5%
+
+
+    &__responsive-imgs
+        padding-left: 5rem
+        float: left
+        width: 50%
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+
+/* ----- iPAD and Mobile Images ----- */  
+
+.responsive
+
+    @media only screen and (max-width: $bp-small)
+        display: flex
+        align-items: center
+        justify-content: center
+
+    @media only screen and (max-width: $bp-medium)
+        padding-left: 6rem
+
+    &--project
+        margin-top: 7%
+
+        @media only screen and (max-width: $bp-small)
+            margin-top: 5rem
+
+
+    &__images        
+
+        &--overview
+            width: 40%
+            position: relative
+
+            @media only screen and (max-width: $bp-medium)
+                width: 80%
+
+            @media only screen and (max-width: $bp-small)
+                width: 100%
+
+        &--project
+            width: 50%
+            position: relative
+
+            @media only screen and (max-width: $bp-medium)
+                width: 30%
+
+            @media only screen and (max-width: $bp-small)
+                width: 70%
+
+        &--ipad
+            width: 100%
+    
+        &--mobile
+            position: relative
+            margin-top: -90%
+            margin-left: 60%
+            width: 50%
+
+            @media only screen and (max-width: $bp-small)
+                margin-left: -20%
+                margin-top: 70%
+
+        
+
+
+/* ----- PROJECTS ----- */
+
+.project
+    position: relative
+
+    &__flex
+        display: flex
+
+        @media only screen and (max-width: $bp-medium)
+            flex-wrap: wrap
+
+    &__left
+        width: 50%
+        display: flex
+        justify-content: center
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            order: 2
+            margin-top: 15rem
+
+        @media only screen and (max-width: $bp-small)
+            margin-top: 10rem
+
+        @media only screen and (max-width: $bp-smallest)
+            margin-top: 5rem
+
+    &__right
+        width: 40%
+        height: 100vh 
+        position: sticky
+        top: 0
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            height: 100%
+            order: 1
+            position: relative
+
+    &__image
+        display: flex
+        position: relative
+        justify-content: center
+        align-items: center
+        align-content: flex-start
+
+        &--a
+            display: flex
+            justify-content: center
+            align-items: center
+
+        &--img
+            width: 50%
+
+            @media only screen and (max-width: $bp-small)
+                width: 70%
+
+    &__text
+        @media only screen and (max-width: $bp-medium)
+            padding: 0 7%
+
+        @media only screen and (max-width: $bp-small)
+            padding: 0 5%
+
+    &__website-text
+        text-align: center
+        width: 100%
+
+        p
+            width: 60%
+            margin: 0 auto
+            text-align: left
+
+            @media only screen and (max-width: $bp-medium)
+                width: 100%
+                padding: 0 5%
+
+    &__img-container
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+        max-width: 100rem
+
+    &__img
+        width: 100%
+
+
+    &__google-ads
+        width: 100%
+        height: 80rem
+        padding-left: 1%
+
+        @media only screen and (max-width: $bp-largest)
+            height: 150rem
+
+        @media only screen and (max-width: $bp-medium)
+            height: 160rem
+
+        @media only screen and (max-width: $bp-small)
+            height: 140rem
+
+        @media only screen and (max-width: $bp-smallest)
+            height: 210rem
+
+        &--imgs
+            float: left
+            margin: 1rem
+
+            @media only screen and (max-width: $bp-large)
+                margin: 0 auto
+                padding: 1%
+                text-align: center
+
+            img
+                @media only screen and (max-width: $bp-large)
+                    width: 100%
+                    margin: 0 auto
+                    text-align: center

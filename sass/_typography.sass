@@ -1,0 +1,73 @@
+.section-title
+    &::after
+            position: relative
+            font-size: 12vw
+            font-weight: 700
+            opacity: .05
+            color: $color-black
+            top: 2.5rem
+            left: 1rem
+            line-height: 0
+            text-transform: uppercase
+
+            @media only screen and (max-width: $bp-medium)
+                top: 0
+
+            @media only screen and (max-width: $bp-small)
+                top: -1rem
+
+    &--about
+        &::after
+            content: 'about'
+
+    &--portfolio
+        &::after
+            content: 'portfolio'
+            color: $color-white
+
+    &--contact
+        &::after
+            content: 'contact'
+
+    &--landing-page
+        &::after
+            content: 'landing page'
+            color: $color-white 
+
+    &--email
+        &::after
+            content: 'email'
+
+    &--campaign-images
+        &::after
+            font-size: 9vw
+            content: 'campaign images'
+
+    &__text
+        margin: 0 auto
+        text-align: center
+        font-size: 5rem
+        font-weight: 700
+        text-transform: uppercase
+        padding-bottom: 1rem
+        line-height: 1  
+
+        &--about   
+
+    &__border
+        border-bottom: .5rem solid $color-primary
+        width: 15rem
+        margin: 0 auto
+
+.header-h4
+    font-size: 4rem
+    font-weight: 400
+    text-transform: uppercase
+    
+    @media only screen and (max-width: $bp-medium)
+            margin: 0 auto
+
+
+.inline-link
+    color: $color-primary
+    text-decoration: none

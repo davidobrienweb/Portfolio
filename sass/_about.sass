@@ -1,0 +1,59 @@
+.about
+
+    &__content
+        display: flex
+
+        @media only screen and (max-width: $bp-medium)
+            flex-wrap: wrap
+
+    &__text
+        width: 50%
+        margin-bottom: 10rem
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            margin: 10rem auto
+            padding: 0 5%
+
+    &__link
+        color: $color-primary
+        font-weight: 400
+        display: block
+        text-decoration: none
+        font-size: 1.6rem
+
+    &__profile-pic 
+        width: 50%
+        display: flex
+        justify-content: center
+        position: relative
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+    
+        &--img
+            border-radius: 50%
+            overflow: hidden
+
+            img
+                width: 100%
+
+        &--blob
+            width: 42rem
+            height: 42rem
+            background: linear-gradient(to right top,rgba($color-primary, 1), rgba($color-secondary, 1))
+            background-size: cover
+            animation: blob-animate 7s linear infinite
+        
+@keyframes blob-animate
+    0%, 100%
+        border-radius: 74% 56% 60% 73%
+    
+    25%
+        border-radius: 73% 27% 26% 38% / 73% 36% 64% 27%
+        
+    50%
+        border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%
+        
+    75%
+        border-radius: 40% 60% 70% 30% / 47% 62% 38% 53%
