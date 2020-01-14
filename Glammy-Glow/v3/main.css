@@ -1,0 +1,235 @@
+.email-background {
+    background: #eeeeee;
+    margin: 0 auto;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-text-size-adjust: 100% !important;
+    -ms-text-size-adjust: 100% !important;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+.email-container {
+    font-family: 'Prompt', sans-serif;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    font-style: normal;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table,
+table td {
+    border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 2px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: 1.3px;
+    word-break: normal;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 100;
+    text-align: center;
+    letter-spacing: .5px;
+    hyphens: none;
+    word-break: normal;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #494949;
+}
+
+.ii a[href] {
+    color: #000000;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #494949;
+    font-weight: 600;
+    line-height: 1;
+}
+
+h3 {
+    font-size: 22px;
+    color: #494949;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 22.5px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #494949;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+
+.button {
+    background-color: #febdb6;
+    border-radius: 4px;
+    color: #000000;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    width: 220px;
+    -webkit-text-size-adjust: none;
+}
+
+.button-sml {
+    background-color: #febdb6;
+    border-radius: 4px;
+    color: #000000;
+    display: inline-block;
+    font-size: 15px;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    -webkit-text-size-adjust: none;
+}
+
+.nav {
+    text-align: center;
+    color: #ffffff;
+}
+
+.nav a {
+    display: inline-block;
+    line-height: 2;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    transition: all .3s;
+}
+
+.features-title {
+    font-size: 39px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.product-name {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.product-price {
+    font-size: 16.5px;
+    color: #000000;
+    text-align: center;
+}
+
+.header-subtitle {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #a67e6a;
+}
+
+.upgrade {
+    border-top: 2px solid #ffd9d4;
+    border-bottom: 2px solid #ffd9d4;
+}
+
+.upgrade p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.wattage h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.wattage p {
+    text-align: center;
+    hyphens: none;
+}
+
+.heat {
+    font-size: 24px;
+    text-align: center;
+    font-style: italic;
+}
+
+.footer-text {
+    margin: auto;
+    text-align: center;
+}
+
+.terms {
+    font-size: 15px;
+    color: #494949;
+    text-align: center;
+    padding: 0 10px;
+}
+
+.footer h3,
+.footer p {
+    padding: 0 20px;
+}
+
+.footer-text a {
+    text-decoration: underline;
+}
+
+.links {
+    color: #494949;
+    font-size: 24px;
+}
+
+.cursive {
+    font-family: 'Playball', cursive, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    color: #494949;
+    letter-spacing: 0;
+}

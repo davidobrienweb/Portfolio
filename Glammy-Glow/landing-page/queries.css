@@ -1,0 +1,446 @@
+@media only screen and (max-width: 1900px) {
+
+    .header-box {
+        top: 5%;
+    }
+
+    .features-box {
+        width: 23%;
+    }
+
+    .bulbs {
+        margin-left: 1%;
+    }
+
+    .mirror {
+        margin-right: 1%;
+    }
+
+}
+
+@media only screen and (max-width: 1440px) {
+
+
+    .product {
+        width: 27%;
+        margin: 3%;
+        margin-top: 80px;
+        margin-bottom: 5px;
+    }
+
+    .product-img {
+        width: 105%;
+    }
+
+    .product-row {
+        width: 100%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    html {
+        font-size: 18px;
+    }
+
+    section {
+        margin-top: 75px;
+    }
+
+    .header-box {
+        width: 60%;
+        position: relative;
+        left: 0;
+        margin: auto;
+        padding: inherit 80px;
+    }
+
+    .points-content {
+        margin-top: 5%;
+    }
+
+    .product {
+        width: 31%;
+        margin: 1%;
+        margin-top: 30px;
+    }
+
+    .gray-bk {
+        height: 350px;
+    }
+
+    .product-img {
+        width: 105%;
+    }
+
+    .section-products .long-title {
+        display: none;
+    }
+
+    .section-products .break-title {
+        display: inline;
+    }
+
+
+    .footer-bk-margin-top {
+        margin-top: 20%;
+    }
+
+    .footer-links {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+
+    .footer-links:nth-child(2) {
+        flex: 0 0 33.3%;
+        max-width: 33.3%;
+    }
+
+    .reserved,
+    .terms-con {
+        margin: 0;
+        padding: 0;
+        line-height: normal
+    }
+
+    .social-btns ul li {
+        margin: 0 1%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 868px) {
+
+
+    html {
+        font-size: 17px;
+    }
+
+    .h2 {
+        font-size: 155%;
+    }
+
+    .header-box {
+        width: 80%;
+    }
+
+    .features-box {
+        padding: 15px;
+    }
+
+    .features-box img {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .features-box h4 {
+        margin-bottom: 10px;
+    }
+
+    .features-box p {
+        margin-bottom: 0px;
+    }
+
+    .features-box {
+        min-height: 0px;
+    }
+
+    .mirror {
+        margin-top: 16%;
+    }
+
+    .plug {
+        margin-top: 40%;
+    }
+
+    .points-content img {
+        width: 120px;
+    }
+
+    .points-content {
+        margin-top: 5%;
+    }
+
+    .points-content h3 {
+        font-size: 80%
+    }
+
+    .gray-bk {
+        height: 250px;
+    }
+
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    section {
+        margin-top: 20px;
+    }
+
+    .h2 {
+        font-size: 200%;
+    }
+
+    .features {
+        height: 100%;
+    }
+
+    .features-box:hover {
+        transform: translateY(0rem) scale(1.03);
+    }
+
+    .header-section {
+        padding-top: 0;
+    }
+
+    .header-box {
+        top: 10%;
+        width: 90%;
+        padding: 0 5px 20px 5px;
+    }
+
+    .header-btn {
+        bottom: -25px;
+    }
+
+    .product {
+        width: 90%;
+        float: none;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .product-container {  
+        display: block;
+    }
+
+    .product-img {
+        width: 250px;
+    }
+
+    .gray-bk {
+        height: 260px;
+    }
+
+    .product-name {
+        padding-top: 25px;
+    }
+
+    .points-bk {
+        padding: 30px 0;
+    }
+
+    .points-content {
+        float: none;
+        width: auto;
+        margin: 0 auto;
+        padding: 0px;
+    }
+
+    .points-content:nth-child(2),
+    .points-content:nth-child(3) {
+        float: left;
+        width: 50%;
+    }
+
+    .points-content h3 {
+        display: none;
+    }
+
+    .points {
+        padding: 0;
+    }
+
+    .footer img {
+        width: 100%;
+    }
+
+    .long-title {
+        display: none;
+    }
+
+    .break-title {
+        display: inline;
+        width: 100%;
+    }
+
+    .section-products .long-title {
+        display: none;
+    }
+
+    .section-products .break-title {
+        display: inline;
+    }
+
+ 
+
+    .footer-bk {
+        height: 300px;
+    }
+
+    .footer-bk-margin-top {
+        margin-top: 25%;
+    }
+
+    .footer-middle {
+        padding: 30px 10px;
+    }
+
+    .footer-col-left {
+        display: block;
+    }
+
+    .footer-links {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-links:nth-child(2) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .footer-links {
+        margin-bottom: 25px;
+    }
+
+    .footer-bottom-con {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .reserved,
+    .terms-con,
+    .social-btns-con {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .terms-con {
+        border: none;
+    }
+
+    .terms {
+        padding-top: 0;
+    }
+
+    .social-btns svg {
+        height: 40px;
+        width: 40px;
+    }
+
+}
+
+
+@media only screen and (max-width: 650px),
+only screen and (hover: none) and (max-width: 650px) {
+
+    .features-text {
+        visibility: visible;
+        font-size: 100%
+    }
+
+    .features-mobile-img {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .features {
+        margin-top: -30px;
+        padding: 50px 0;
+    }
+
+    .features-box {
+        background-color: rgba(255, 255, 255, .9);
+    }
+
+    .features-box img {
+        width: 50%;
+    }
+
+    .features-img {
+        background-color: rgba(255, 255, 255, .0);
+        animation: none;
+    }
+
+    .bulbs,
+    .dimmer,
+    .mirror,
+    .plug {
+        width: 75%;
+        margin: auto;
+        float: none;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin: 10% auto;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+
+    .h2 {
+        font-size: 175%;
+    }
+
+    .break-title-2 {
+        display: inline;
+    }
+
+    .header-mobile-img {
+        display: block;
+    }
+
+    .section-products .long-title {
+        display: none;
+    }
+
+    .section-products .break-title {
+        display: none;
+    }
+
+    .ig-img {
+        width: 50%;
+    }
+
+    .ig-img:last-child {
+        display: none;
+    }
+
+}
+
+
+@media only screen and (max-width: 320px) {
+
+    html {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 650px) and (orientation: landscape) {
+
+    .page-wrapper .page-header {
+        position: relative !important;
+    }
+
+    body .page-wrapper {
+        margin: 0 !important;
+    }
+}
