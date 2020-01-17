@@ -1,0 +1,104 @@
+.header
+
+.top-bar
+    background: linear-gradient(#1baec6, #098b9e)
+    padding: .5rem
+    display: inline-block
+    width: 100%
+    font-size: 1.6rem
+    color: #ffffff
+    
+    &__nav
+        float: left
+
+        @media only screen and (max-width: $bp-medium)
+            display: none
+
+    &__account
+        float: right
+
+        @media only screen and (max-width: $bp-medium)
+            float: none
+            text-align: center
+
+    &__a
+        font-size: 1.4rem
+        color: #ffffff
+        text-transform: uppercase
+        padding: 1.5rem
+        font-weight: 400
+        transition: all .2s
+
+        &:hover
+            color: $color-black
+        
+.header-inner
+    clear: both
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 1rem 2rem
+    position: relative
+
+    @media only screen and (max-width: $bp-medium)
+        flex-wrap: wrap
+        text-align: center
+        justify-content: center
+
+    .header-logo
+        width: 46.5rem
+        margin-top: 1rem
+
+        @media only screen and (max-width: $bp-medium)
+            width: 35rem
+
+        @media only screen and (max-width: $bp-small)
+            width: 20rem
+            display: block
+
+    .header-secondary
+        font-size: 3rem
+        font-weight: 400
+        margin-bottom: .5rem
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            margin-top: 1rem
+            display: block
+
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 2rem
+
+        span
+            font-style: italic
+            color: #1baec6
+
+        a
+            color: #ee9022
+
+.watch-videos
+    background-color: #ee9022
+    text-transform: uppercase
+    display: inline-block
+    color: #ffffff
+    border-radius: 3px
+    padding: 3px 6px
+    font-size: 1.5rem
+    text-align: center
+    margin-left: 12rem
+    margin-top: -2.8rem
+    font-weight: 400
+    transition: all .2s
+
+    &:hover
+        background-color: #f59c35
+
+    @media only screen and (max-width: $bp-medium)
+        margin: 0 auto
+        display: block
+        max-width: 120px
+
+    &__a
+        color: #ffffff
+

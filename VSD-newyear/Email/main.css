@@ -1,0 +1,266 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.email-background {
+    background: #ffffff;
+    margin: 0 auto;
+    background: #eeeeee;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: nudista-web, sans-serif;
+}
+
+.email-container {
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 5px;
+    text-align: center;
+    font-style: normal;
+}
+
+table {
+    margin: 0 auto;
+}
+
+table,
+table td {
+    border-collapse: collapse;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    padding: 2px;
+    margin: 0;
+    font-weight: normal;
+    line-height: 1.2;
+    text-decoration: none;
+    text-align: center;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h2 {
+    font-size: 44px;
+    line-height: 1.1;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/* -----------  HEADER ----------- */
+
+.sunrise-desk {
+    font-size: 65px;
+    color: #ee9022;
+    text-align: center;
+    font-style: italic;
+}
+
+@media only screen and (max-width: 400px) {
+    .sunrise-desk {
+        font-size: 40px !important;
+        color: #ee9022;
+        text-align: center;
+        font-style: italic;
+    }
+
+}
+
+.sunrise-desk span {
+    color: #1baec6;
+}
+
+
+/* -----------  PRODUCTS ----------- */
+
+
+.product-name {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+    color: #262626;
+}
+
+.product-name span {
+    font-weight: normal;
+}
+
+.product-price {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.5;
+    color: #262626;
+}
+
+.product-price span {
+    color: #ee9022;
+}
+
+
+/* -----------  BUTTONS ----------- */
+
+.button {
+    background-color: #ee9022;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 24px;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    width: 200px;
+    -webkit-text-size-adjust: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button-sml {
+    background-color: #ee9022;
+    border-radius: 5px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 150px;
+    -webkit-text-size-adjust: none;
+    margin: auto;
+    cursor: pointer;
+}
+
+.button:hover,
+.button-sml:hover,
+.button:active,
+.button-sml:active {
+    background-color: #ffa235;
+    transition: .2s !important;
+    cursor: pointer !important;
+}
+
+.button:hover,
+.button-sml:hover {
+    position: relative !important;
+    top: -1px !important;
+}
+
+.button:active,
+.button-sml:active {
+    position: relative !important;
+    top: 1px !important;
+}
+
+.tel {
+    color: #ffffff;
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: center !important;
+}
+
+
+/* -----------  FOOTER ----------- */
+
+
+.footer-text {
+    margin: auto;
+    text-align: center;
+}
+
+.terms {
+    font-size: 15px;
+    color: #000000;
+    text-align: center;
+    padding: 0 10px;
+    font-weight: normal;
+}
+
+.limited {
+    font-weight: bold;
+    font-size: 24px;
+    color: #1baec6;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+.footer-text a {
+    text-decoration: underline;
+}
+
+.links {
+    color: #000000;
+    font-size: 18px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.links:hover {
+    color: #1baec6 !important;
+}
+
+.call a,
+.call p {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.call .tel {
+    font-size: 30px;
+}
+
+.tel {
+    font-size: 35px;
+    line-height: 1.5;
+    text-align: center !important;
+    color: #ee9022;
+    margin: 0 auto;
+}
+
+.exp {
+    font-weight: bold;
+    font-size: 23px;
+}

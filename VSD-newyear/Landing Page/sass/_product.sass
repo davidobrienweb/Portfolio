@@ -1,0 +1,78 @@
+/* ---- PRODUCTS ---- */
+
+.products
+
+    &__img-container
+
+    &__img
+        margin: 0 auto
+        text-align: center
+
+        @media only screen and (max-width: $bp-large)
+            padding: 2rem
+
+        @media only screen and (max-width: $bp-small)
+            padding: 5rem
+
+        @media only screen and (max-width: $bp-smallest)
+            padding: 3rem
+
+    &__bk
+        height: 40rem
+        display: flex
+        align-items: center
+        justify-content: center
+        transform: skewY(-3deg)
+        margin-bottom: 10rem
+
+        @media only screen and (max-width: $bp-large)
+            margin-bottom: 15rem
+
+        @media only screen and (max-width: $bp-medium)
+            margin-bottom: 20%
+
+        @media only screen and (max-width: $bp-small)
+            height: 30rem
+
+        @media only screen and (max-width: $bp-smallest)
+            height: 23rem
+
+        & > *
+            transform: skewY(3deg)
+
+        &--orange
+            background: linear-gradient(to right, #ff7900, #ee8f21)
+
+        &--blue
+            background: linear-gradient(to right, #19b2ca, #00e7ff)
+
+    &__text
+        text-align: center
+
+    &__name
+        font-size: 4.5rem
+        font-weight: 600
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 3.5rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 3rem
+
+        span
+            font-weight: 400
+
+    &__price
+        font-size: 3.5rem
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 2.5rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 2rem
+
+.strike
+    text-decoration: line-through
+
+.orange
+    color: $color-orange
