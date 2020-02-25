@@ -1,0 +1,50 @@
+/* ----- NAV ----- */
+    
+nav
+    width: 100%
+
+    ul
+        width: 100%
+        margin: 0 auto
+        padding: 0
+
+        @media only screen and (max-width: $bp-medium)
+            display: none
+
+        li
+            list-style: none
+            display: inline-block
+            padding: 2rem
+
+            @media only screen and (max-width: $bp-medium)
+                display: block
+                text-align: center
+
+        a
+            color: $color-dark-gray
+            text-decoration: none
+            transition: all .3s ease
+            font-size: 1.6rem
+            cursor: pointer
+
+            @media only screen and (max-width: $bp-medium)
+                font-size: 2rem
+
+            &:hover
+                color: $color-primary
+
+.toggle
+    width: 100%
+    padding: 1rem
+    text-align: right
+    color: $color-black
+    font-size: 3rem
+    display: none
+    cursor: pointer
+    transition: all .5s ease
+
+    @media only screen and (max-width: $bp-medium)
+        display: block
+
+.active
+    display: block

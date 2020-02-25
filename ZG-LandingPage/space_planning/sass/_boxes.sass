@@ -1,0 +1,34 @@
+/* ----- BOXES ----- */
+
+.boxes
+    display: flex
+    margin: 0 auto
+    max-width: 175rem
+    margin-bottom: 30rem
+
+    @media only screen and (max-width: $bp-large)
+        flex-wrap: wrap
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 15rem
+
+    @media only screen and (max-width: $bp-small)
+        margin-bottom: 25rem
+
+    &__box
+        margin: 1rem auto
+        border: 3px solid $color-primary
+        background: $color-white
+        padding: 3rem
+        padding-bottom: 5rem
+        text-align: center
+        flex: 0 0 24%
+
+        @media only screen and (max-width: $bp-large)
+            flex: 0 0 48%
+
+        @media only screen and (max-width: $bp-small)
+            flex: 0 0 90%
+            padding: 2rem
+            padding-bottom: 5rem
+            border: 2px solid $color-primary

@@ -1,0 +1,85 @@
+/* ----- FOOTER ----- */
+
+.footer
+    background-color: $color-white
+
+    &__top
+        background: $color-primary
+        text-align: center
+        color: $color-white
+        padding: 3rem
+
+        h2
+            font-size: 3.2rem
+
+        p
+            color: $color-black
+            margin: 1rem 0 2rem 0
+
+        a
+            text-decoration: none
+            color: $color-white
+            line-height: 1.5
+            display: block      
+            cursor: pointer
+            transition: all .3s ease
+
+            &:hover
+                color: $color-black  
+
+    &__bottom
+        max-width: 120rem
+        margin: 0 auto
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        align-items: center
+        padding: 2.5rem
+
+        @media only screen and (max-width: $bp-small)
+            flex-wrap: wrap
+
+
+        a
+            font-size: 1.6rem
+            font-weight: 400
+            line-height: 1.8
+            color: $color-black
+            text-decoration: none
+            cursor: pointer
+            transition: all .3s ease
+
+            &:hover
+                color: $color-primary
+
+            
+            &:last-child
+                margin-left: 5rem
+
+
+            @media only screen and (max-width: $bp-small)
+                font-size: 2rem
+
+
+        p
+            @media only screen and (max-width: $bp-small)
+                margin: 0 auto
+                line-height: 3
+                font-size: 2rem
+                text-align: center
+
+        &--right
+            @media only screen and (max-width: $bp-small)
+                margin: 0 auto
+                width: 100%
+
+                text-align: center
+        
+
+    &__tel
+        font-weight: 700
+        font-size: 2.5rem
+
+    &__email
+        font-weight: 400
+        font-size: 2rem

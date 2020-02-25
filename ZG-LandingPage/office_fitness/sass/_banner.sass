@@ -1,0 +1,36 @@
+/* ----- BANNER ----- */
+
+.banner
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/banner-img.jpg")
+    background-size: cover
+    background-position: center
+    margin: 0 auto
+    height: 100vh
+    width: 100%
+
+    @media only screen and (max-width: $bp-medium)
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/banner-medium-img.jpg")
+        background-position: center
+        height: 100rem
+
+    @media only screen and (max-width: $bp-small)
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/banner-mobile-img.jpg")
+        background-position: top
+        height: 100rem
+
+    &__container
+        @include row
+        position: relative
+        top: 35%
+        padding: 5rem 1%
+
+        @media only screen and (max-width: $bp-large)
+            padding: 0 5%
+
+    &__text
+        @include row
+        text-align: left
+        z-index: 5
+        color: $color-white   
+        margin-bottom: 3rem   
+        text-shadow: 1px 1px 40px rgba($color-white, .4)

@@ -1,0 +1,38 @@
+/* ----- COLOR VARIABLES ----- */
+
+$color-primary: #7ECA68
+$color-light-gray: #f4f4f4
+$color-dark-gray: #9c9c9c
+$color-black: #262626
+$color-white: #ffffff
+
+$bp-largest: 75em     // 1200px
+$bp-large: 68.75em    // 1100px
+$bp-medium: 56.25em   // 900px
+$bp-medium-small: 46.875em   // 750px
+$bp-small: 37.5em     // 600px
+$bp-smallest: 31.25em // 500px
+
+
+    
+/* ----- MIXINS ----- */
+
+@mixin clearfix
+    &::after
+        content: ""
+        display: table
+        clear: both
+
+@mixin row
+    max-width: 120rem
+    margin: 0 auto
+
+@mixin flex-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+@mixin flex-start
+    display: flex
+    align-items: flex-start
+    justify-content: space-between

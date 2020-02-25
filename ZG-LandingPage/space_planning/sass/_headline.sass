@@ -1,0 +1,99 @@
+/* ----- HEADLINE ----- */
+
+.headline
+    @include clearfix
+    @include row
+    display: flex
+    justify-content: space-between
+    margin-bottom: 10rem
+    position: relative
+    padding: 0 1%
+    overflow: hidden
+    padding-top: 3rem
+
+    @media only screen and (max-width: $bp-medium)
+        flex-wrap: wrap
+        margin-bottom: 0rem
+
+
+    &__text
+        flex: 0 0 50%
+        padding-right: 10%
+
+        @media only screen and (max-width: $bp-medium)
+            flex: 0 0 50%
+            padding: 0 5%
+            top: -2rem
+            position: relative
+
+        @media only screen and (max-width: $bp-small)
+            flex: 0 0 100%
+            margin: 0 auto
+            text-align: center
+
+        h3
+            border-bottom: 3px solid $color-primary  
+
+            @media only screen and (max-width: $bp-small)
+                border-bottom: 2px solid $color-primary  
+                width: 80%
+                margin: 0 auto
+
+            @media only screen and (max-width: $bp-smallest)
+                width: 100%
+
+    &__img
+        position: relative
+        right: 0
+        flex: 0 0 50%
+
+        @media only screen and (max-width: $bp-medium)
+            margin-top: 20rem
+
+        @media only screen and (max-width: $bp-small)
+            flex: 0 0 65%
+            margin: 0 auto
+            margin-top: 10rem
+            right: -9rem
+
+        @media only screen and (max-width: $bp-small)
+            flex: 0 0 60%
+
+        &::before
+            content: ""
+            position: absolute
+            background: $color-primary
+            height: 25rem
+            width: 25rem
+            top: -1.5rem
+            right: -1.5rem
+
+            @media only screen and (max-width: $bp-medium)
+                height: 20rem
+                width: 20rem
+
+            @media only screen and (max-width: $bp-smallest)
+                height: 15rem
+                width: 15rem
+                top: -1rem
+                right: -1rem
+        img
+            @media only screen and (max-width: $bp-medium)
+                width: 90%
+
+    &__img-1
+        z-index: 3
+        position: relative
+        float: right
+        max-width: 461px
+
+    &__img-2
+        position: relative
+        top: -10rem
+        left: -10rem
+        z-index: -1
+        max-width: 394px
+
+        @media only screen and (max-width: $bp-large)
+            top: -15rem
+            left: -20rem

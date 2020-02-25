@@ -1,0 +1,83 @@
+/* ------  PRODUCTS  ------ */
+
+.products
+    max-width: 140rem
+    margin-left: auto
+    margin-right: auto
+    display: flex
+    margin-bottom: 10rem
+    text-align: center
+    overflow: hidden
+
+    @media only screen and (max-width: $bp-medium)
+        flex-wrap: wrap
+
+    &__padding
+        padding: 1.5rem
+        padding-bottom: 4rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        @media only screen and (max-width: $bp-small)
+            padding-bottom: 4rem
+
+    &__box
+        width: 25%
+        margin: 0 1rem
+        margin-bottom: 3rem
+        background: $color-white
+        box-shadow: 3px 3px 10px rgba($color-black, .1)
+
+        @media only screen and (max-width: $bp-medium)
+            width: 47%
+            margin: 1.5rem 1.5%
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+            margin: 1.5rem 5rem
+
+        @media only screen and (max-width: $bp-smallest)
+            margin: 1.5rem 3.5rem
+
+    &__img
+        margin-top: 1rem
+        
+        img
+            max-width: 218px
+
+    &__title
+        margin-top: 2rem
+
+        @media only screen and (max-width: $bp-small)
+            height: 100%
+            margin-bottom: 3rem
+
+        @media only screen and (max-width: $bp-smallest)
+            margin-bottom: 1.5rem
+
+        h5
+            font-size: 2rem
+            font-weight: 700
+
+            @media only screen and (max-width: $bp-small)
+                font-size: 2.5rem
+
+
+.products__colors
+    margin-bottom: 2rem
+    min-height: 5rem
+    display: flex
+    justify-content: space-between
+
+    img
+        max-width: 4.5rem
+        width: 90%
+        margin: 0 .2rem
+
+        @media only screen and (max-width: $bp-small)
+            max-width: 7rem
+
+        @media only screen and (max-width: $bp-smallest)
+            max-width: 4.5rem

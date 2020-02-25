@@ -1,0 +1,74 @@
+/* ----- BOXES ----- */
+
+.boxes
+    display: flex
+    align-items: center
+    flex-direction: column
+    justify-content: center
+    position: relative
+    margin-bottom: 10rem
+    height: 67rem
+    background-image: linear-gradient(rgba($color-primary, 0.8), rgba(#449e21, 0.8)), url("../img/lotsOf-Desks.jpg")
+    background-size: cover
+    background-position: center
+    clip-path: polygon(0% 10%, 100% 0%, 100% 90%, 0 100%)
+
+    @media only screen and (max-width: $bp-medium)
+        height: 90rem
+
+    @media only screen and (max-width: $bp-large)
+        margin-bottom: 10rem
+
+    @media only screen and (max-width: $bp-small)
+        margin-bottom: 25rem
+        height: 100%
+        padding: 20rem 2rem
+        clip-path: polygon(0% 5%, 100% 0%, 100% 95%, 0 100%)
+
+    &__container
+        display: flex
+        margin: 0 auto
+        max-width: 111rem
+
+        @media only screen and (max-width: $bp-medium)
+            flex-wrap: wrap
+
+    &__title
+        text-align: center
+
+        @media only screen and (max-width: $bp-medium)
+            width: 80%
+
+        @media only screen and (max-width: $bp-small)
+            width: 90%
+
+        h4
+            text-transform: capitalize
+            font-weight: 700
+            color: $color-white
+            padding-bottom: 1rem
+
+            @media only screen and (max-width: $bp-small)
+                padding-bottom: 5rem
+
+    &__box
+        margin: 1rem auto
+        background: rgba($color-white, .85)
+        padding: 3rem
+        text-align: center
+        flex: 0 0 23%
+        display: flex
+        flex-direction: column
+        align-items: center
+
+        @media only screen and (max-width: $bp-medium)
+            flex: 0 0 48%
+
+        @media only screen and (max-width: $bp-small)
+            flex: 0 0 90%
+            padding: 2rem
+            padding-bottom: 5rem
+            
+        img
+            margin-bottom: 3rem
+            max-width: 65px

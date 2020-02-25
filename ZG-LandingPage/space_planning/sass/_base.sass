@@ -1,0 +1,83 @@
+/* ----- BASE ----- */
+
+*,
+*::after,
+*::before
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+html
+    box-sizing: border-box
+    font-size: 62.5% // 10px / 16px = 62.5% -> 1rem = 10px
+
+    @media only screen and (max-width: $bp-large)
+        font-size: 50%
+
+    @media only screen and (max-width: $bp-small)
+        font-size: 45%
+
+    @media only screen and (max-width: $bp-smallest)
+        font-size: 40%
+
+body
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif
+    color: $color-black
+    background: $color-light-gray
+    font-weight: 300
+    line-height: 1.6
+    -webkit-font-smoothing: antialiased
+
+    ::selection
+        background-color: $color-primary
+        color: $color-white
+
+
+img
+    display: block
+    height: auto
+
+    @media only screen and (max-width: $bp-large)
+        width: 100%
+
+
+
+/* ----- MARGINS ----- */
+
+.margin-bottom-small
+    margin-bottom: 2rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 1.5rem
+
+.margin-bottom-medium
+    margin-bottom: 8rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 6rem
+
+.margin-bottom-large
+    margin-bottom: 20rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-bottom: 12rem
+
+.margin-top-small
+    margin-top: 2rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-top: 1.5rem
+
+.margin-top-medium
+    margin-top: 8rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-top: 6rem
+
+.margin-top-large
+    margin-top: 20rem
+
+    @media only screen and (max-width: $bp-medium)
+        margin-top: 12rem
+
+    

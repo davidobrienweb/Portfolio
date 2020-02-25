@@ -1,0 +1,27 @@
+/* ----- HEADER ----- */
+
+.header
+    background: $color-white
+    padding: 1rem
+
+    &__content
+        @include flex-center
+        @include row
+
+        @media only screen and (max-width: $bp-medium)
+            flex-wrap: wrap
+    
+    &__logo
+        @media only screen and (max-width: $bp-medium)
+            display: block
+            margin: 1rem auto
+
+    &__links
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            display: block
+
+    &__img
+        width: 16rem
+        height: 6rem
+        
