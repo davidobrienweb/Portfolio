@@ -1,48 +1,117 @@
 .header
     height: 100vh
+    background: linear-gradient(rgba($color-background,.4))
     display: flex
+    align-items: center
     justify-content: center
-    flex-direction: column
 
-    background: linear-gradient(to right top,rgba($color-primary, 1), rgba($color-secondary, 1)), url(../img/header-image.png)
-    background-blend-mode: multiply
-    background-size: cover
-    background-position: left
+    @media only screen and (max-width: $bp-largest)
+        padding: 0 1%
 
-    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0))
+    @media only screen and (max-width: $bp-large)
+        height: 100%
+        padding-bottom: 5rem
+        
+
+    //@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0))
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
             clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%)
             height: 95vh
 
-    @media only screen and (max-width: $bp-medium)
+    //@media only screen and (max-width: $bp-medium)
         @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0))
                 -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%)
                 clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%)
                 height: 95vh
 
+    //&::before
+        content: ""
+        background-size: cover
+        position: absolute
+        top: 0px
+        right: 0px
+        bottom: 0px
+        left: 0px
+        opacity: 0.1
+        //background: linear-gradient(rgba($color-background,1)), url(../img/banner-bk.jpg)
+        background: linear-gradient(rgba($color-background,1))
+        background-blend-mode: multiply
+        background-size: cover 
+        background-position: center
+
+    &__container
+        display: flex
+        justify-content: space-evenly
+        align-items: center
+        width: 200rem
+        margin: 0 auto
+        
+        @media only screen and (max-width: $bp-large)
+            flex-wrap: wrap
+            padding: 3rem 0 5rem 0
+
     &__text
         position: relative
-        margin-top: 15rem
 
-        @media only screen and (max-width: $bp-smallest)
+        @media only screen and (max-width: $bp-large)
+            margin-top: 10rem
+            width: 100%
+
+    &__img
+
+        @media only screen and (max-width: $bp-large)
             margin-top: 7rem
 
+        @media only screen and (max-width: $bp-medium)
+            display: flex
+            justify-content: center
+            align-items: center
+
+        
+
+        img
+            width: 50rem
+
+            @media only screen and (min-width: $bp-max-largest)
+                width: 70rem
+
+            @media only screen and (max-width: $bp-largest)
+                width: 45rem
+
+            @media only screen and (max-width: $bp-medium)
+                width: 38rem
+
+            @media only screen and (max-width: 300px)
+                width: 30rem
 
     &__h1
-        font-size: 6rem
+        font-size: 7rem
         font-weight: 700
-        color: $color-white
-        text-align: center
+        color: $color-primary
+        text-align: left
         line-height: 1.2
-        text-shadow: 1px 1px 5px rgba($color-black, .4)
+        //text-shadow: 1px 1px 6px rgba($color-black, .1)
+
+        @media only screen and (min-width: $bp-max-largest)
+            font-size: 10rem
+
+        @media only screen and (max-width: $bp-large)
+            text-align: center
+
+        @media only screen and (max-width: $bp-small)
+            font-size: 5.5rem
 
     &__h2
-        font-size: 3.5rem
+        font-size: 3rem
         font-weight: 400
-        color: $color-white
-        text-align: center
+        color: $color-black
+        text-align: left
         line-height: 1.2
-        text-shadow: 1px 1px 5px rgba($color-black, .4)
+        margin-top: 1rem
+        //text-shadow: 1px 1px 3px rgba($color-black, .1)
+
+        @media only screen and (max-width: $bp-large)
+            text-align: center
 
         @media only screen and (max-width: $bp-small)
             margin-top: 1rem
@@ -51,6 +120,18 @@
             @media only screen and (max-width: $bp-small)
                 display: block
                 line-height: 1.5
+
+    &__btn
+        text-transform: uppercase
+
+        @media only screen and (max-width: $bp-large)
+            display: flex
+            justify-content: center
+        
+        @media only screen and (max-width: $bp-small)
+            width: 90%
+            margin: 0 auto
+            margin-top: 2rem
 
 
 /* ----- DOWN ARROW ----- */    

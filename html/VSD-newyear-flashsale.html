@@ -12,26 +12,34 @@
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-    <title>David O'Brien - Web Designer &amp; Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+
+    <title>David O'Brien - UI / UX Designer</title>
 </head>
 
 <body>
 
     <div class="top hide">
         <a href="#">
-            <i class="fas fa-chevron-up"></i>
+            <svg width="25" height="12" viewBox="0 0 20.67 11.15">
+                <polygon
+                    points="20.67 10.33 10.34 0 10.33 0 10.33 0 0 10.33 0.82 11.15 10.33 1.65 19.84 11.15 20.67 10.33" />
+            </svg>
         </a>
     </div>
 
     <div class="flex grid-container">
-        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()">☰</a>
+        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()"><img class="nav-menu" src="../img/open-menu.svg" alt="☰"></a>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <div class="overlay-content">
                 <ul>
-                    <li><a href="../html/index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
-                    <li><a href="../html/index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
-                    <li><a href="../html/index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
+                    <li><a href="../index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
+                    <li><a href="../index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
+                    <li><a href="../index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
                     </li>
                     <li><a href="#contact" onclick="closeNav()" class="mobile-nav">Contact</a></li>
                 </ul>
@@ -40,9 +48,9 @@
 
         <nav id="nav">
             <ul>
-                <li><a href="../html/index.html" class="desktop-nav">Home</a></li>
-                <li><a href="../html/index.html#about" class="desktop-nav">About</a></li>
-                <li><a href="../html/index.html#portfolio" class="desktop-nav">Portfolio</a></li>
+                <li><a href="../index.html" class="desktop-nav">Home</a></li>
+                <li><a href="../index.html#about" class="desktop-nav">About</a></li>
+                <li><a href="../index.html#portfolio" class="desktop-nav">Portfolio</a></li>
                 <li><a href="#contact" class="desktop-nav">Contact</a></li>
             </ul>
         </nav><!-- #/nav -->
@@ -77,6 +85,12 @@
                 Design a responsive e-commerce platform that will allow Mirror to increase revenue, attract new
                 customers, and sell excess inventory. Give the company a face lift by designing a new logo that captures
                 the essence of the brand.
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">Target Persona</span>
+                VersaDesk is targeted toward a customer that is looking for a standing desk at a reasonable
+                price, that doesn't have to be the best on the market. The New Year Sale offers a deal that
+                allows the customer to easily make a purchase of a standing desk.
             </p>
             <p class="overview__p">
                 <span class="overview__span">Outcome</span>
@@ -122,7 +136,8 @@
                     <div class="buttons-container margin-top-medium">
                         <a href="../VSD-newyear/Landing Page/index.html"
                             target="blank" class="btn btn--arrow btn--white">View Landing Page</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--white">View Code</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/VSD-newyear/Landing%20Page"
+                            target="blank" class="btn btn--arrow btn--white">View Code</a>
                     </div>
                 </div>
 
@@ -157,13 +172,14 @@
             <div class="project__right">
                 <div class="project__text">
                     <p class="project__p">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all
+                        I created a an email for the sale using modern HTML and CSS code that is responsive for all
                         devices.
                     </p>
                     <div class="buttons-container margin-top-medium">
                         <a href="../VSD-newyear/Email/index.html" target="blank"
                             class="btn btn--arrow btn--grad">View Email</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--grad">View Code</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/VSD-newyear/Email"
+                            target="blank" class="btn btn--arrow btn--grad">View Code</a>
                     </div>
                 </div>
 
@@ -237,7 +253,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/OBrien-Web" target="blank">
+                        <a href="https://github.com/davidobrienweb" target="blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>

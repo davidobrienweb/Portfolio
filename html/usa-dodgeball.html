@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="image" property="og:image" content="https://iili.io/FlHdZJ.md.jpg">
+    <meta name="author" content="David O'Brien">
+
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../sass/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+
+    <title>David O'Brien - UI / UX Designer</title>
+</head>
+
+<body>
+
+    <div class="bottom-nav">
+        <div class="bottom-nav__container">
+
+            <div class="bottom-nav__button">
+                <a href="../index.html">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-home.svg" alt="Home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Home
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#about">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-about.svg" alt="About">
+                    </div>
+                    <div class="bottom-nav__text">
+                        About
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#portfolio">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-portfolio.svg" alt="Portfolio">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Portfolio
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="#contact">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-contact.svg" alt="Contact">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Contact
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="top hide">
+        <a href="#">
+            <svg width="25" height="12" viewBox="0 0 20.67 11.15">
+                <polygon
+                    points="20.67 10.33 10.34 0 10.33 0 10.33 0 0 10.33 0.82 11.15 10.33 1.65 19.84 11.15 20.67 10.33" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="flex grid-container">
+        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()"><img class="nav-menu" src="../img/open-menu-black.svg" alt="☰"></a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+                <ul>
+                    <li><a href="../index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
+                    <li><a href="../index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
+                    <li><a href="../index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
+                    </li>
+                    <li><a href="#contact" onclick="closeNav()" class="mobile-nav">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html" class="desktop-nav">Home</a></li>
+                <li><a href="../index.html#about" class="desktop-nav">About</a></li>
+                <li><a href="../index.html#portfolio" class="desktop-nav">Portfolio</a></li>
+                <li><a href="#contact" class="desktop-nav">Contact</a></li>
+            </ul>
+        </nav><!-- #/nav -->
+    </div>
+
+    <section class="overview margin-top-large">
+
+        <div class="overview__title-container margin-bottom-large">
+            <img src="../img/usa-dodgeball/USA-Logo.svg" style="width: 300px;" class="overview__logo" alt="USA Dodgeball">
+            <h3 class="overview__h3">Website Redesign</span></h3>
+
+            <div class="buttons-container margin-top-medium">
+                <a href="#final-product" class="btn btn--grad btn--arrow">Final Product</a>
+            </div>
+        </div>
+
+        <div class="overview__text-container">
+            <h4 class="overview__h4">Overview</h4>
+            <p class="overview__p">
+                <span class="overview__span">The Client</span>
+                USA Dodgeball is an organization that promotes and develops the sport of dodgeball across the United States; they host tournaments across the country and organize the national team representing the United States in the World Dodgeball Federation to play against teams from around the world.  USA Dodgeball aims to unite the nation under a governing body that gives a voice to many individual dodgeball organizations who share the goal of developing and promoting the sport of dodgeball.   
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">The Challenge</span>
+                The website was difficult to navigate and confusing for players looking for direction on how to sign up for teams, register for tournaments, purchase gear, and find information on rules and regulations related to dodgeball.  Due to the disorganized user interface of the previous website, member use and satisfaction was low.  USA Dodgeball needed a redesign of their website to better support the player community with information about USA Dodgeball, including their online store, Premier Tour, Team USA, and individual dodgeball organizations.   
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">The Process</span>
+                To start the website redesign, I evaluated the website and noted what worked well and what needed improvements.  After compiling my list of website optimizations, I pitched the ideas to current USA Dodgeball players for more insights.  Through this process, I learned more about their current frustrations with the existing website, as well as what they would need to see in a new version to convince them to visit the site regularly.  After conducting research in the dodgeball community, I generated a user flow chart based on the average player’s needs, and from there I sketched multiple wireframe options for the design of the website. I then utilized Adobe XD to generate mock-ups of the different pages within the website to create working prototypes for both the desktop and mobile versions.
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">Outcome</span>
+                The redesigned USA Dodgeball website has been optimized to meet the needs of the players, with improvements made to the aesthetics and functionality.  With the addition of the new Premier Tour section, players of those tournaments now have a reason to visit the website regularly so they can stay up to date on tournament updates and find free agent players for their teams.  The new website design allows players to quickly navigate via clear CTA buttons, improved text hierarchy, and better imagery that pops off the page, while resolving the current frustrations of USA Dodgeball members.
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">Role</span>
+                UI/UX Designer
+            </p>
+        </div>
+
+        <div class="overview__responsive-imgs responsive responsive--overview">
+            <div class="responsive__images responsive__images--overview">
+                <img class="responsive__images--img-usa" src="../img/usa-dodgeball/desktop-mobile-preview.png" alt=""></a>
+            </div>
+        </div>
+
+        
+    </section>
+
+    <div class="section-title section-title--beforeafter margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Before &amp; After</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="container">
+            <figure>
+                <div id="compare"></div>
+            </figure>
+            <input oninput="beforeAfter()" onchange="beforeAfter()" type="range" min="0" max="100" value="50" id="slider"/>
+        </div>
+
+
+    <section id="" class="ui-section margin-bottom-large">
+        <div class="section-title section-title--persona margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Persona</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="flex-center persona">
+            <img src="../img/usa-dodgeball/user_persona.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="" class="ui-section margin-bottom-large">
+        <div class="section-title section-title--card-sorting margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Card Sorting</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="flex-center persona">
+            <img src="../img/usa-dodgeball/sticky-notes.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="" class="ui-section">
+        <div class="section-title section-title--flowchart margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Flow Chart</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="flex-center">
+            <img class="flowchart-img" src="../img/usa-dodgeball/USA Dodgeball-flowchart.png" alt="">
+        </div>
+    </section>
+
+    <section id="" class="ui-section margin-bottom-large margin-top-large">
+        <div class="section-title section-title--wireframes margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Wireframes</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="flex-center margin-bottom-large">
+            <img class="wireframe-1" src="../img/usa-dodgeball/wireframes-1.jpg" alt="">
+            <img class="wireframe-2" src="../img/usa-dodgeball/wireframes-2.jpg" alt="">
+        </div>
+    </section>
+
+    <section id="" class="ui-section">
+        <div class="section-title section-title--hi-fi-wireframes margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Hi-FI WireFrames</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="app-row app-row__usa hifi-imgs">
+            <div class="img"><img src="../img/usa-dodgeball/home-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/tournaments-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/tournament-page-wireframe.png" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/shop-categories-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/product-page-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/free-agents-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/free-agent-profile-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/team-usa-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/team-page-wireframe.jpg" alt=""></div>
+            <div class="img"><img src="../img/usa-dodgeball/member-league-wireframe.jpg" alt=""></div>
+        </div>
+    </section>
+
+
+    <section id="final-product" class="ui-section margin-bottom-large">
+        <div class="section-title section-title--final-product margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Final Product</div>
+            <div class="section-title__border"></div>
+        </div>
+        
+        <div class="prototype">
+            <a href="https://xd.adobe.com/view/bdb9ae5c-1a13-4521-b7f2-af63a1531bad-e8ea/screen/87d868ce-ba19-4eae-b7ba-e14c10b230e3?fullscreen"
+                target="blank" class="btn btn--grad btn--arrow">Desktop Design</a>
+
+            <a href="https://xd.adobe.com/view/1e2cd301-aa10-415f-924a-bafe90d8f728-4b7f/?fullscreen&hints=off"
+                target="blank" class="btn btn--grad btn--arrow">Mobile Design</a>
+        </div>
+
+        <div class="desktop-video margin-top-large margin-bottom-large">
+            <div class="flex-center">
+                <iframe class="youtube-video" src="https://www.youtube.com/embed/jYAOqiAvb5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <div class="final-product margin-bottom-large margin-top-large">
+            <div class="final-product__img">
+                <div class="video">
+                    <video class="video__files" controls="" autoplay="true" loop="true" data-origwidth="0"
+                        data-origheight="0">
+                        <source src="../img/usa-dodgeball/home-mobile.mp4" type="video/mp4">
+                        <source src="../img/usa-dodgeball/home-mobile.webm" type="video/webm">
+                        <source src="../img/usa-dodgeball/home-mobile.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="final-product__text">
+                <span class="overview__span">Home Page</span>
+                <br>
+                <ul class="overview__span--ul">
+                    <li class="overview__span--li">
+                        The home page design has been improved to be both visually appealing and easy to navigate to entice viewers to spend more time on the site.  
+                    </li>
+                    <li class="overview__span--li">
+                        The new navigation bar and header text clearly stand out on the page, helping users better maneuver the different site options. 
+                    </li>
+                    <li class="overview__span--li">
+                        The home page featured image has been replaced with an action shot of a player with a darkened background to add contrast for more visible text.  
+                    </li>
+                    <li class="overview__span--li">
+                        I added a call to action button, Play Dodgeball, so players can easily navigate to the Premier Tour section.  
+                    </li>
+                    <li class="overview__span--li">
+                        Below the header graphic, I replaced the hectic photo collage with individual sections, including titles, concise paragraphs, call to action buttons, and singular images of dodgeball players.    
+                    </li>
+                    <li class="overview__span--li">
+                        At the bottom of the home page, I included a section where users can quickly register as a USA Dodgeball member at the click of a button.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="final-product margin-bottom-large">
+            <div class="final-product__text">
+                <span class="overview__span">Premier Tour</span>
+                <br>
+                <ul class="overview__span--ul">
+                    <li class="overview__span--li">
+                        A new section of the website, the Premier Tour houses everything a player would need to play dodgeball.    
+                    </li>
+                    <li class="overview__span--li">
+                        All of the tournaments that USA Dodgeball hosts are listed here, along with the steps to register.  
+                    </li>
+                    <li class="overview__span--li">
+                        The Teams section displays all current dodgeball teams that play in the Premier Tour tournaments, which allows users to see the associated players and links to the team’s social media accounts for easy contact.  
+                    </li>
+                    <li class="overview__span--li">
+                        The Free Agents section allows players who don’t already have a team to create a profile and describe their dodgeball skills, upload highlight clips from previous games, select preferred ball types, and provide contact information.   
+                    </li>
+                    <li class="overview__span--li">
+                        Other players and captains can view the profiles posted in the Free Agent section to find new members within their region to complete their team.  
+                    </li>
+                    <li class="overview__span--li">
+                        This is a huge step up from the previous method of creating an Excel sheet for free agents to put their contact information on, as it was consistently outdated and led to many players without teams.
+                    </li>
+                </ul>
+            </div>
+            <div class="final-product__img">
+                <div class="video">
+                    <video class="video__files video__files--desktop" controls="" autoplay="true" loop="true" data-origwidth="0"
+                        data-origheight="0">
+                        <source src="../img/usa-dodgeball/premiertour-desktop.mp4" type="video/mp4">
+                        <source src="../img/usa-dodgeball/premiertour-desktop.webm" type="video/webm">
+                        <source src="../img/usa-dodgeball/premiertour-desktop.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+        <div class="final-product margin-bottom-large margin-top-large">
+            <div class="final-product__img">
+                <div class="video">
+                    <video class="video__files" controls="" autoplay="true" loop="true" data-origwidth="0"
+                        data-origheight="0">
+                        <source src="../img/usa-dodgeball/mobile-overview.mp4" type="video/mp4">
+                        <source src="../img/usa-dodgeball/mobile-overview.webm" type="video/webm">
+                        <source src="../img/usa-dodgeball/mobile-overview.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+            <div class="final-product__text">
+                <span class="overview__span">Mobile Design</span>
+                <br>
+                <ul class="overview__span--ul">
+                    <li class="overview__span--li">
+                        The mobile version of the website has been designed to look and feel like a native app.  
+                    </li>
+                    <li class="overview__span--li">
+                        On the home page, I shifted the items within the desktop version’s navigation bar to be large buttons that were more mobile-friendly for navigating the site. 
+                    </li>
+                    <li class="overview__span--li">
+                        I included a bottom navigation bar that sticks to the screen for easy navigation to the home page, Premier Tour, Shop, and the user’s account.
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+
+        <div class="final-product margin-bottom-large">
+            <div class="final-product__text">
+                <span class="overview__span">About Us Changes</span>
+                <br>
+                <ul class="overview__span--ul">
+                    <li class="overview__span--li">
+                        The About Us page now includes Membership, which had previously fallen under the un-related Member Organizations page, making it difficult for players to find.
+                    </li>
+                    <li class="overview__span--li">
+                        I added links for the different subcategories to the About Us page, as they previously were only accessible through the navigation menu and they were not housed on any section, making the nav bar the only method of finding subcategories. 
+                    </li>
+                    <li class="overview__span--li">
+                        For all of the USA Dodgeball resources to be accessible on one page, the downloadable official logos were moved from the Events page to the Resources page.
+                    </li>
+                </ul>
+            </div>
+            <div class="final-product__img">
+                <div class="video">
+                    <video class="video__files video__files--desktop" controls="" autoplay="true" loop="true" data-origwidth="0"
+                        data-origheight="0">
+                        <source src="../img/usa-dodgeball/aboutus-desktop.mp4" type="video/mp4">
+                        <source src="../img/usa-dodgeball/aboutus-desktop.webm" type="video/webm">
+                        <source src="../img/usa-dodgeball/aboutus-desktop.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="contact margin-bottom-large" id="contact">
+        <div class="section-title section-title--contact margin-top-large margin-bottom-large">
+            <div class="section-title__text">contact</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="contact__container">
+            <div>
+                <a class="contact__link" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
+            </div>
+            <div>
+                <a class="contact__link" href="tel:562-477-2601">562-477-2601</a>
+            </div>
+            <div>
+                <a class="contact__link" href="https://www.linkedin.com/in/obriengraphics/" target="blank">LinkedIn</a>
+            </div>
+            <div class="contact__buttons margin-top-medium">
+                <ul class="contact__social-icons">
+                    <li>
+                        <a href="mailto:davidobrienweb@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:562-477-2601">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/obriengraphics/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/davidobrienweb" target="blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/obrien.ui/" target="blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="//code.jquery.com/jquery-3.0.0.min.js"></script> <!-- add jquery library-->
+    <script src="https://kit.fontawesome.com/70b7312e2a.js"></script> <!-- awesome font library-->
+
+    <script src="../js/js.js"></script>
+
+</body>
+
+</html>

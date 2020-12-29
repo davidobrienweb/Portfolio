@@ -10,28 +10,87 @@
 
     <link rel="stylesheet" href="../sass/main.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <title>David O'Brien - Web Designer &amp; Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+
+    <title>David O'Brien - UI / UX Designer</title>
 </head>
 
 <body>
 
+    <div class="bottom-nav">
+        <div class="bottom-nav__container">
+
+            <div class="bottom-nav__button">
+                <a href="../index.html">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-home-red.svg" alt="home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Home
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#about">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-about-red.svg" alt="home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        About
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#portfolio">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-portfolio-red.svg" alt="home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Portfolio
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="#contact">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-contact-red.svg" alt="home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Contact
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
     <div class="top hide">
         <a href="#">
-            <i class="fas fa-chevron-up"></i>
+            <svg width="25" height="12" viewBox="0 0 20.67 11.15">
+                <polygon
+                    points="20.67 10.33 10.34 0 10.33 0 10.33 0 0 10.33 0.82 11.15 10.33 1.65 19.84 11.15 20.67 10.33" />
+            </svg>
         </a>
     </div>
 
     <div class="flex grid-container">
-        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()">☰</a>
+        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()"><img class="nav-menu" src="../img/open-menu-black.svg" alt="☰"></a>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <div class="overlay-content">
                 <ul>
-                    <li><a href="../html/index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
-                    <li><a href="../html/index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
-                    <li><a href="../html/index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
+                    <li><a href="../index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
+                    <li><a href="../index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
+                    <li><a href="../index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
                     </li>
                     <li><a href="#contact" onclick="closeNav()" class="mobile-nav">Contact</a></li>
                 </ul>
@@ -40,9 +99,9 @@
 
         <nav id="nav">
             <ul>
-                <li><a href="../html/index.html" class="desktop-nav">Home</a></li>
-                <li><a href="../html/index.html#about" class="desktop-nav">About</a></li>
-                <li><a href="../html/index.html#portfolio" class="desktop-nav">Portfolio</a></li>
+                <li><a href="../index.html" class="desktop-nav">Home</a></li>
+                <li><a href="../index.html#about" class="desktop-nav">About</a></li>
+                <li><a href="../index.html#portfolio" class="desktop-nav">Portfolio</a></li>
                 <li><a href="#contact" class="desktop-nav">Contact</a></li>
             </ul>
         </nav><!-- #/nav -->
@@ -72,6 +131,10 @@
                 <span class="overview__span">The Challenge</span>
                 Design and develop a landing page that compares our drafting table products to our competitor’s drafting table.
             </p>
+             <p class="overview__p">
+                 <span class="overview__span">Target Persona</span>
+                 VersaTables specializes in buisness to buisness sales and for coporate sales. This landing page is targeted toward a customer that is looking 
+             </p>
             <p class="overview__p">
                 <span class="overview__span">Outcome</span>
                 A responsive landing page that shows all the differences between the drafting tables ranging from adjustment options, dimensions, and price.
@@ -116,7 +179,8 @@
                     <div class="buttons-container margin-top-medium">
                         <a href="../VT-compare/index.html"
                             target="blank" class="btn btn--arrow btn--white">View Landing Page</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--white">View Code</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/VT-compare" target="blank"
+                            class="btn btn--arrow btn--white">View Code</a>
                     </div>
                 </div>
 
@@ -159,7 +223,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/OBrien-Web" target="blank">
+                        <a href="https://github.com/davidobrienweb" target="blank">
                             <i class="fab fa-github"></i>
                         </a>
                     </li>

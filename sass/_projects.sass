@@ -2,18 +2,31 @@
     
 .overview
     @include clearfix
+    max-width: 1400px
+    margin-left: auto
+    margin-right: auto
     
     @media only screen and (max-width: $bp-medium)
         flex-wrap: wrap
 
     &__h2
         font-size: 6rem
-        font-weight: 600
+        font-weight: 400
         text-align: left
         line-height: 1
+
         
         @media only screen and (max-width: $bp-small)
             text-align: center
+            font-size: 5rem
+            margin-top: 7rem
+
+        @media only screen and (max-width: $bp-smallest)
+            font-size: 4.5rem
+
+        span
+            @media only screen and (max-width: $bp-small)
+                display: block
     
     &__h3
         font-size: 3rem
@@ -22,11 +35,18 @@
         font-style: italic
         margin-top: 1rem
 
-        @media only screen and (max-width: $bp-small)
+        @media only screen and (max-width: $bp-medium)
             text-align: center
+        
+        @media only screen and (max-width: $bp-small)
+            span
+                display: block
 
     &__p
         max-width: 75rem
+
+        @media only screen and (max-width: $bp-large)
+            max-width: 45rem
 
         @media only screen and (max-width: $bp-medium)
             margin-left: auto
@@ -45,6 +65,7 @@
         color: $color-primary
         display: block
         font-weight: 700
+        font-size: 1.8rem
 
     &__logo
         max-width: 40rem
@@ -53,9 +74,6 @@
             max-width: 35rem
 
         @media only screen and (max-width: $bp-medium)
-            max-width: 40rem
-
-        @media only screen and (max-width: $bp-small)
             max-width: 35rem
             margin-left: auto
             margin-right: auto
@@ -63,50 +81,68 @@
 
     &__title-container
         float: left
-        width: 50%
-        padding-left: 5rem
+        width: 45%
         margin-bottom: 10rem
+        padding-left: 5rem
 
         @media only screen and (max-width: $bp-medium)
             width: 100%
             margin-bottom: 7rem
 
-        @media only screen and (max-width: $bp-small)
+        @media only screen and (max-width: $bp-medium)
             padding-left: 0
             margin-bottom: 5rem
+
+
+        &--app
+            width: 420px
+
+        &--title
+            display: flex
+            flex-direction: column
+            align-items: center
 
     &__text-container
         float: right
         width: 50%
+        padding-right: 2rem
 
         @media only screen and (max-width: $bp-medium)
             width: 100%
             padding: 0 5rem
+            margin-bottom: 5rem
 
         @media only screen and (max-width: $bp-small)
             width: 100%
             padding: 0 5%
+            margin-bottom: 2rem
+
+        &--app
+            @media only screen and (max-width: $bp-medium)
+                width: 80%
+
 
 
     &__responsive-imgs
-        padding-left: 5rem
         float: left
         width: 50%
 
         @media only screen and (max-width: $bp-small)
             width: 100%
 
+
+        
+
+
 /* ----- iPAD and Mobile Images ----- */  
 
 .responsive
 
-    @media only screen and (max-width: $bp-small)
-        display: flex
-        align-items: center
-        justify-content: center
-
     @media only screen and (max-width: $bp-medium)
-        padding-left: 6rem
+        display: flex
+        align-items: centerv
+        justify-content: center
+        width: 100%
 
     &--project
         margin-top: 7%
@@ -120,38 +156,46 @@
         &--overview
             width: 40%
             position: relative
+            padding-left: 50px
 
             @media only screen and (max-width: $bp-medium)
-                width: 80%
-
-            @media only screen and (max-width: $bp-small)
                 width: 100%
+                margin-bottom: 3rem
+                margin: 0 auto
+                padding-left: 0
 
-        &--project
-            width: 50%
-            position: relative
-
-            @media only screen and (max-width: $bp-medium)
-                width: 30%
-
-            @media only screen and (max-width: $bp-small)
-                width: 70%
+                display: flex
+                justify-content: center
 
         &--ipad
-            width: 100%
+            width: 70%
     
         &--mobile
             position: relative
-            margin-top: -90%
-            margin-left: 60%
-            width: 50%
+            margin-top: -50%
+            margin-left: 50%
+            width: 30%
 
             @media only screen and (max-width: $bp-small)
                 margin-left: -20%
                 margin-top: 70%
 
-        
+        &--img
 
+            @media only screen and (max-width: $bp-large)
+                width: 250px
+
+            @media only screen and (max-width: $bp-smallest)
+                width: 200px
+
+        &--img-usa
+            width: 500px
+
+            @media only screen and (max-width: $bp-largest)
+                width: 400px
+            
+            @media only screen and (max-width: $bp-large)
+                width: 350px
 
 /* ----- PROJECTS ----- */
 
@@ -167,30 +211,40 @@
     &__left
         width: 50%
         display: flex
-        justify-content: center
+        justify-content: flex-end
+        margin-right: 5rem
 
         @media only screen and (max-width: $bp-medium)
             width: 100%
+            margin-bottom: 10rem
             order: 2
-            margin-top: 15rem
+            justify-content: center
 
         @media only screen and (max-width: $bp-small)
             margin-top: 10rem
-
-        @media only screen and (max-width: $bp-smallest)
-            margin-top: 5rem
+            margin-right: 0
+            
 
     &__right
         width: 40%
         height: 100vh 
         position: sticky
         top: 0
+        margin-bottom: 15%
+        padding-top: 1%
+
+        @media only screen and (max-width: $bp-large)
+            margin-left: 2rem
 
         @media only screen and (max-width: $bp-medium)
             width: 100%
             height: 100%
             order: 1
             position: relative
+            margin-left: 0
+
+        @media only screen and (max-width: $bp-small)
+            margin-bottom: 0
 
     &__image
         display: flex
@@ -201,21 +255,35 @@
 
         &--a
             display: flex
-            justify-content: center
             align-items: center
 
+            @media only screen and (max-width: $bp-medium)
+                justify-content: center
+
         &--img
-            width: 50%
+            max-width: 600px
+
+            @media only screen and (max-width: $bp-largest)
+                max-width: 400px
 
             @media only screen and (max-width: $bp-small)
-                width: 70%
+                width: 90%
 
     &__text
+
         @media only screen and (max-width: $bp-medium)
             padding: 0 7%
 
         @media only screen and (max-width: $bp-small)
             padding: 0 5%
+
+    &__p
+        
+        @media only screen and (min-width: $bp-largest)
+            width: 600px
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
 
     &__website-text
         text-align: center
@@ -240,10 +308,13 @@
         width: 100%
 
 
+
     &__google-ads
-        width: 100%
+        max-width: 150rem
         height: 80rem
-        padding-left: 1%
+        margin-left: auto
+        margin-right: auto
+        text-align: center
 
         @media only screen and (max-width: $bp-largest)
             height: 150rem
@@ -252,10 +323,10 @@
             height: 160rem
 
         @media only screen and (max-width: $bp-small)
-            height: 140rem
+            height: 150rem
 
         @media only screen and (max-width: $bp-smallest)
-            height: 210rem
+            height: 120rem
 
         &--imgs
             float: left
@@ -271,3 +342,279 @@
                     width: 100%
                     margin: 0 auto
                     text-align: center
+
+                @media only screen and (max-width: $bp-small)
+                    width: 80%
+
+                @media only screen and (max-width: $bp-smallest)
+                    width: 90%
+
+        &--large
+            @media only screen and (max-width: $bp-small)
+                width: 50%
+                float: left
+
+
+
+
+.overview
+    
+    &__title-container
+        float: left
+        width: 45%
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            margin-bottom: 7rem
+
+        @media only screen and (max-width: $bp-small)
+            padding-left: 0
+            margin-bottom: 5rem
+
+.app-overall
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $color-background
+    margin-top: 25rem
+    margin-bottom: 10rem
+    padding-bottom: 5rem
+
+    @media only screen and (min-width: $bp-max-largest)
+        margin-top: 35rem
+
+    @media only screen and (max-width: $bp-largest)
+        margin-top: 30rem
+
+    &--video
+        margin-top: -22.5rem
+
+        @media only screen and (min-width: $bp-max-largest)
+            margin-top: -27.2rem
+
+        @media only screen and (max-width: $bp-largest)
+            margin-top: -28.1rem
+
+        @media only screen and (max-width: $bp-small)
+            margin-top: -20rem
+
+.video
+
+    @media only screen and (max-width: $bp-medium)
+        display: flex
+        justify-content: center
+        align-items: center
+
+    &__header
+        width: 400px
+
+    &__files
+        width: 300px
+        
+        @media only screen and (min-width: $bp-max-largest)
+            width: 350px
+
+        @media only screen and (max-width: $bp-small)
+            width: 30rem !important
+
+        &--header
+            width: 372px
+
+            @media only screen and (min-width: $bp-max-largest)
+                width: 450px
+
+            @media only screen and (max-width: $bp-small)
+                width: 33rem !important
+
+        &--desktop
+            width: 600px
+
+            @media only screen and (max-width: $bp-largest)
+                width: 500px
+            
+            @media only screen and (max-width: $bp-large)
+                width: 430px
+
+            @media only screen and (max-width: $bp-medium)
+                width: 500px
+
+            @media only screen and (max-width: $bp-small)
+                width: 100% !important
+
+.app-row
+    @include clearfix
+    display: flex
+    justify-content: center
+    margin: 15rem auto
+    overflow: hidden
+    flex-wrap: wrap
+
+    &__usa
+        max-width: 1500px
+
+        @media only screen and (max-width: $bp-max-largest) 
+            max-width: 1000px
+
+    .img
+        img
+            width: 200px
+
+            @media only screen and (min-width: $bp-max-largest)
+                width: 255px
+
+            @media only screen and (max-width: $bp-largest)  
+                width: 140px
+
+.wireframe-1
+    margin-right: -3rem
+    z-index: 5
+    box-shadow: 2px 5px 12px rgba($color-black, .5)
+    width: 500px
+
+    @media only screen and (min-width: $bp-max-largest)
+        width: 600px
+
+    @media only screen and (max-width: $bp-large)
+        width: 50%
+
+
+.wireframe-2
+    margin-left: -3rem
+    margin-bottom: -20rem
+    width: 500px
+
+    @media only screen and (min-width: $bp-max-largest)
+        width: 600px
+
+    @media only screen and (max-width: $bp-large)
+        width: 50%
+
+.ui-section
+    @include clearfix
+    margin-bottom: 10rem
+
+    @media only screen and (min-width: $bp-max-largest)
+        margin-bottom: 20rem
+
+.hifi-imgs
+    margin: 5rem auto
+
+    .img
+        margin: .5rem
+        margin-top: 2rem
+
+        img
+            width: 140px
+
+            @media only screen and (max-width: $bp-small)  
+                width: 110px
+
+.final-product
+    display: flex
+    justify-content: space-around
+    align-items: center
+    max-width: 130rem
+    margin-left: auto
+    margin-right: auto
+    padding: 0 3rem
+
+    @media only screen and (max-width: $bp-largest)
+        padding: 0 5rem
+
+    @media only screen and (max-width: $bp-large)
+            flex-wrap: wrap
+
+    @media only screen and (max-width: $bp-medium)
+        margin: 0 1.5rem
+        padding: 0
+
+    &__img
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            order: 1
+
+
+    &__text
+        max-width: 60rem
+
+        @media only screen and (max-width: $bp-large)
+            max-width: 37rem
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            max-width: 100%
+            order: 2
+            margin-top: 3rem
+            margin-bottom: 10rem
+            margin-left: 1.5rem
+            margin-right: 1.5rem
+
+
+        ul
+            margin-left: 3rem
+
+        li
+            font-size: 1.6rem
+            line-height: 2
+
+
+.flowchart-img
+    width: 1200px
+
+    @media only screen and (min-width: $bp-max-largest)
+        width: 1200px
+
+    @media only screen and (max-width: $bp-largest)
+        width: 100%
+        padding: 0 1%
+
+
+.persona
+    img
+        width: 800px
+
+        @media only screen and (min-width: $bp-max-largest)
+            width: 1000px
+
+        @media only screen and (max-width: $bp-medium)
+            width: 100%
+            padding: 0 1rem
+    
+
+.prototype
+    display: flex
+    justify-content: space-evenly
+    margin: 0 auto
+    margin-bottom: 30px
+    max-width: 60rem
+    flex-wrap: wrap
+    
+    @media only screen and (max-width: $bp-small)
+        width: 90%
+    
+
+
+.border-section
+    border-top: 1px solid rgba($color-black, .2)
+    width: 50%
+    margin: 80px auto 50px auto
+
+
+.youtube-video
+    width: 900px
+    height: 506px
+
+    @media only screen and (max-width: $bp-medium)
+        width: 600px
+        height: 337px
+
+    @media only screen and (max-width: $bp-small)
+        width: 100%
+        height: auto
+        min-height: 300px
+
+    @media only screen and (max-width: $bp-smallest)
+        width: 100%
+        height: auto
+        min-height: 200px

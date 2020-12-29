@@ -9,27 +9,85 @@
 
     <link rel="stylesheet" href="../sass/main.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <title>David O'Brien - Web Designer &amp; Developer</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+   <link rel="manifest" href="../img/site.webmanifest">
+
+    <title>David O'Brien - UI / UX Designer</title>
 </head>
 <body>
 
+    <div class="bottom-nav">
+        <div class="bottom-nav__container">
+
+            <div class="bottom-nav__button">
+                <a href="../index.html">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-home.svg" alt="Home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Home
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#about">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-about.svg" alt="About">
+                    </div>
+                    <div class="bottom-nav__text">
+                        About
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#portfolio">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-portfolio.svg" alt="Portfolio">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Portfolio
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="#contact">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-contact.svg" alt="Contact">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Contact
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
     <div class="top hide">
         <a href="#">
-            <i class="fas fa-chevron-up"></i>
+            <svg width="25" height="12" viewBox="0 0 20.67 11.15">
+                <polygon
+                    points="20.67 10.33 10.34 0 10.33 0 10.33 0 0 10.33 0.82 11.15 10.33 1.65 19.84 11.15 20.67 10.33" />
+            </svg>
         </a>
     </div>
 
     <div class="flex grid-container">
-        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()">☰</a>
+        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()"><img class="nav-menu" src="../img/open-menu-black.svg" alt="☰"></a>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <div class="overlay-content">
                 <ul>
-                    <li><a href="../html/index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
-                    <li><a href="../html/index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
-                    <li><a href="../html/index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
+                    <li><a href="../index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
+                    <li><a href="../index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
+                    <li><a href="../index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
                     </li>
                     <li><a href="#contact" onclick="closeNav()" class="mobile-nav">Contact</a></li>
                 </ul>
@@ -38,9 +96,9 @@
 
         <nav id="nav">
             <ul>
-                <li><a href="../html/index.html" class="desktop-nav">Home</a></li>
-                <li><a href="../html/index.html#about" class="desktop-nav">About</a></li>
-                <li><a href="../html/index.html#portfolio" class="desktop-nav">Portfolio</a></li>
+                <li><a href="../index.html" class="desktop-nav">Home</a></li>
+                <li><a href="../index.html#about" class="desktop-nav">About</a></li>
+                <li><a href="../index.html#portfolio" class="desktop-nav">Portfolio</a></li>
                 <li><a href="#contact" class="desktop-nav">Contact</a></li>
             </ul>
         </nav><!-- #/nav -->
@@ -49,13 +107,13 @@
     <section class="overview margin-top-large margin-bottom-large">
 
         <div class="overview__title-container">
-            <img src="../img/GLAMMY-Logo-brush.svg" class="overview__logo" alt="GLAMMY">
+            <img src="../img/glammy-imgs/GLAMMY-Logo-brush.svg" class="overview__logo" alt="GLAMMY">
             <h3 class="overview__h3">Say Hello to Galmmy</h3>
 
             <div class="buttons-container margin-top-medium">
                 <a href="#landing-page" class="btn btn--grad btn--arrow margin-right">Landing Page</a>
                 <a href="#email" class="btn btn--grad btn--arrow margin-right">Email</a>
-                <a href="#campaign-images" class="btn btn--grad btn--arrow">Campaign Images</a>
+                <a href="#campaign-images" class="btn btn--secondary btn--arrow">Campaign Images</a>
             </div>
         </div>
 
@@ -64,17 +122,35 @@
             <p class="overview__p">
                 <span class="overview__span">The Client</span>
                 <a class="inline-link" href="https://glammy.com/" target="blank">Glammy</a> is a lifestyle brand under
-                    <a class="inline-link" href="https://www.versaproducts.com/" target="blank">VersaProducts</a> that sells professional
-                        quality vanity mirrors that will help women upgrade their getting ready routine with the promise of offering a feeling of fabulosity they won't find anywhere
-                    else.
+                    <a class="inline-link" href="https://www.versaproducts.com/" target="blank">VersaProducts</a> that
+                    sells professional quality vanity mirrors that help females upgrade their beauty regimens and
+                    routines of getting ready, with the promise of feeling “fabulosity” that they won't find with
+                    regular bathroom mirrors or standard vanities.
             </p>
             <p class="overview__p">
                 <span class="overview__span">The Challenge</span>
-                Design and develop a marketing campaign to promote a new brand which includes creating an email, landing page, and google display ads. I created multiple email designs for this campaign for A/B testing to see which design works best with the demographic.
+                The new brand Glammy needed to differentiate themselves from longer-standing competitors and increase
+                brand recognition and favorability amongst potential consumers in the beauty space to increase sales of
+                their vanity mirrors. Glammy needed a marketing campaign design for landing pages, emails, and Google
+                display ads that promoted the benefits of their high-quality vanity mirror features.
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">Target Persona</span>
+                Glammy was targeted towards females with detailed beauty regimes who need a mirror that reflects the
+                effort they put into how they look each day. These female customers typically have high household
+                incomes (HHI) and the ability to afford luxury items, leaving them with purchasing power and
+                expectations of the best in the market products.
             </p>
             <p class="overview__p">
                 <span class="overview__span">Outcome</span>
-                A campaign design for Glammy that set the benchmark in terms of design quality for the brand.
+                I generated a branding campaign design for Glammy that set the benchmark in terms of design quality for
+                the brand. The designs for the landing page, emails, and display ads are sleek and modern, with a rose
+                gold color scheme to attract the target audience. To learn which design converts strongest with the
+                target demographic, I designed multiple versions of the emails for us to A/B test. Each version of the
+                emailed test included the same product information, carried into one of the three different designs to
+                see which versions our email subscribers were most likely to click on and purchase from. I developed the
+                landing page and emails by generating modern HTML and CSS code using Flexbox that is responsive to all
+                devices, including different smartphones, tablets, and desktops.
             </p>
             <p class="overview__p">
                 <span class="overview__span">Role</span>
@@ -84,10 +160,7 @@
 
         <div class="overview__responsive-imgs responsive responsive--overview">
             <div class="responsive__images responsive__images--overview">
-                <img class="responsive__images--ipad" src="../img/glammy-imgs/Glammy-landingpage-ipad.png" alt="">
-            </div>
-            <div class="responsive__images responsive__images--overview">
-                <img class="responsive__images--mobile" src="../img/glammy-imgs/Glammy-landingpage-mobile.png"valt="">
+                <img class="responsive__images--img" src="../img/glammy-imgs/responsive-landingpage.png"valt="">
             </div>
         </div>
 
@@ -95,7 +168,7 @@
 
     <section class="section-background" id="landing-page">
         <div class="section-title section-title--landing-page margin-top-large margin-bottom-large">
-            <div class="section-title__text white">Landing Page</div>
+            <div class="section-title__text">Landing Page</div>
             <div class="section-title__border"></div>
         </div>
 
@@ -108,25 +181,29 @@
             </div>
             <div class="project__right">
                 <div class="project__text">
-                    <p class="project__p white">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all
-                        devices.
+                    <p class="project__p">
+                        The landing page starts with an image of the mirror and text to entice the user to learn more
+                        about the product. The “Why” section displays more specific information about the mirror that
+                        can be unveiled by hovering over the floating circle images when viewing on a desktop, which
+                        flash like a fashion show runway to attract the attention of the viewer. After that, users can
+                        learn about the extra qualities about the mirror that make it stand out from the crowd such as
+                        free shipping and a lifetime warranty. In the shop section, the products are displayed for users
+                        to start their shopping needs immediately. Lastly, the Instagram section displays the most
+                        recent social media posts the brand has launched, and they are linked to the Instagram page
+                        where a user can easily follow the account.
                     </p>
                     <div class="buttons-container margin-top-medium">
                         <a href="../Glammy-Glow/landing-page/index.html"
-                            target="blank" class="btn btn--arrow btn--white">View Landing Page</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--white">View Code</a>
+                            target="blank" class="btn btn--arrow btn--grad margin-right">View Landing Page</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/Glammy-Glow/landing-page"
+                            target="blank" class="btn btn--arrow btn--secondary">View Code</a>
                     </div>
                 </div>
 
                 <div class="responsive responsive--project">
                     <div class="responsive__images responsive__images--project">
                         <a href="../Glammy-Glow/landing-page/index.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--ipad" src="../img/glammy-imgs/Glammy-landingpage-ipad.png" alt=""></a>
-                    </div>
-                    <div class="responsive__images responsive__images--project">
-                        <a href="../Glammy-Glow/landing-page/index.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--mobile" src="../img/glammy-imgs/Glammy-landingpage-mobile.png" alt=""></a>
+                        <img class="responsive__images--img" src="../img/glammy-imgs/responsive-landingpage.png" alt=""></a>
                     </div>
                 </div>
 
@@ -153,28 +230,34 @@
                         <h2 class="project__email-title">Email Version 1</h2>
                     </div>
                     <p class="project__p">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all
-                        devices.
+                        In the first version of the email the slogan “Glow On” was displayed in a gif with stars moving
+                        up catching the eye of the customer. The first design was flowy, airy, and white with touches of
+                        light pink, including positivity stars moving up the background behind the font. There are
+                        pictures of the mirror in realistic environments showing how it will look while in use. Next,
+                        information about the low wattage bulbs was displayed, which was a key selling point for
+                        avoiding excess heat from the lighting. In the shop section, the products are displayed for
+                        users to start their shopping needs immediately. Lastly, a gif showing a preview for a video
+                        promoting the product and a call to action button that links to the shop section of the Glammy
+                        website close out the email design, directing viewers to learn more or directly purchase online.
                     </p>
                     <div class="buttons-container margin-top-medium">
                         <a href="../Glammy-Glow/v1/index.html" target="blank"
-                            class="btn btn--arrow btn--grad">View Email</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--grad">View Code</a>
+                            class="btn btn--arrow btn--grad margin-right">View Email</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/Glammy-Glow/v1" target="blank"
+                            class="btn btn--arrow btn--secondary">View Code</a>
                     </div>
                 </div>
 
                 <div class="responsive responsive--project">
                     <div class="responsive__images responsive__images--project">
                         <a href="../Glammy-Glow/v1/index.html" target="blank" class="project__image--a">
-                            <img class="responsive__images--ipad" src="../img/glammy-imgs/Glammy-email-v1-ipad.png" alt=""></a>
-                    </div>
-                    <div class="responsive__images responsive__images--project">
-                        <a href="../Glammy-Glow/v1/index.html" target="blank" class="project__image--a">
-                            <img class="responsive__images--mobile" src="../img/glammy-imgs/Glammy-email-v1-mobile.png" alt=""></a>
+                            <img class="responsive__images--img" src="../img/glammy-imgs/responsive-email-1.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="border-section"></div>
 
         <div class="project project__flex margin-top-large">
             <div class="project__left">
@@ -189,28 +272,34 @@
                         <h2 class="project__email-title">Email Version 2</h2>
                     </div>
                     <p class="project__p">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all
-                        devices.
+                        The second version of the email was differentiated by changing the “Glow On” design with a
+                        trendy rose gold and maroon palm tree background and floating lights streaming across with a
+                        90210 vibe. We wanted to see if customers who viewed this might prefer a darker background with
+                        bright lights for future designs, as this emulates the lights that our mirrors give to our
+                        clients. I combined the subtitle text with new images that were taken from a festival where
+                        Glammy showcased their mirrors and Instagram influencers posed in, tying in the social media and
+                        email newsletter marketing. The product section design was changed to a condensed layout that
+                        required less scrolling to more easily view all the products.
                     </p>
                     <div class="buttons-container margin-top-medium">
-                        <a href="../Glammy-Glow/v2/index.html" target="blank" class="btn btn--arrow btn--grad">View
+                        <a href="../Glammy-Glow/v2/index.html" target="blank"
+                            class="btn btn--arrow btn--grad margin-right">View
                             Email</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--grad">View Code</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/Glammy-Glow/v2" target="blank"
+                            class="btn btn--arrow btn--secondary">View Code</a>
                     </div>
                 </div>
 
                 <div class="responsive responsive--project">
                     <div class="responsive__images responsive__images--project">
                         <a href="../Glammy-Glow/v2/index.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--ipad" src="../img/glammy-imgs/Glammy-email-v2-ipad.png" alt=""></a>
-                    </div>
-                    <div class="responsive__images responsive__images--project">
-                        <a href="../Glammy-Glow/v2/index.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--mobile" src="../img/glammy-imgs/Glammy-email-v2-mobile.png" alt=""></a>
+                        <img class="responsive__images--img" src="../img/glammy-imgs/responsive-email-2.png" alt=""></a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <div class="border-section"></div>
 
         <div class="project project__flex margin-top-large">
             <div class="project__left">
@@ -225,24 +314,27 @@
                         <h2 class="project__email-title">Email Version 3</h2>
                     </div>
                     <p class="project__p">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all
-                        devices.
+                        The third version of the email was differentiated by changing the “Glow On” design with a
+                        darkened and close up palm tree background and a sun streaming across. We wanted to see if
+                        customers who viewed this prefer a static background with a single ray light for future designs
+                        compared to the previous design of multiple lights moving the entire time. I changed the product
+                        environment images to a single image that was broken up into separate pieces. The product
+                        section design was changed to a two column layout with the product image on top, and the text
+                        with call to action button stacked below.
                     </p>
                     <div class="buttons-container margin-top-medium">
-                        <a href="../Glammy-Glow/v3/index.html" target="blank" class="btn btn--arrow btn--grad">View
+                        <a href="../Glammy-Glow/v3/index.html" target="blank"
+                            class="btn btn--arrow btn--grad margin-right">View
                             Email</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--grad">View Code</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/Glammy-Glow/v3" target="blank"
+                            class="btn btn--arrow btn--secondary">View Code</a>
                     </div>
                 </div>
 
                 <div class="responsive responsive--project">
                     <div class="responsive__images responsive__images--project">
                         <a href="../Glammy-Glow/v3/index.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--ipad" src="../img/glammy-imgs/Glammy-email-v3-ipad.png" alt=""></a>
-                    </div>
-                    <div class="responsive__images responsive__images--project">
-                        <a href="../Glammy-Glow/v3/index.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--mobile" src="../img/glammy-imgs/Glammy-email-v3-mobile.png" alt=""></a>
+                        <img class="responsive__images--img" src="../img/glammy-imgs/responsive-email-3.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -251,41 +343,48 @@
 
     <section class="section-background" id="campaign-images">
         <div class="section-title section-title--campaign-images margin-top-large margin-bottom-large">
-            <div class="section-title__text white">Campaign Images</div>
+            <div class="section-title__text">Campaign Images</div>
             <div class="section-title__border"></div>
         </div>
 
         <div class="project">
             <div class="project__container margin-top-large">
                 <div class="project__website-text">
-                    <h4 class="header-h4 white margin-bottom-small">Google Display Ads</h4>
-                    <p class="project__p white">The Google Display Ads are ads that I created that are displayed on other websites to draw new costumers. I created GIF animations that display different slides with information about the sale happening.
+                    <h4 class="header-h4 margin-bottom-small">Google Display Ads</h4>
+                    <p class="project__p">
+                        To advertise the new female-focused vanity mirrors on other websites, with the intent of gaining
+                        new customers who may not have heard of Glammy and therefore weren’t currently visiting our
+                        site, I created a set of Google Display ads that would appeal to our female target demographic.
+                        I designed these Google Display Ads to fit 13 different advertisement spec sizes optimized for
+                        mobile, desktop, and tablet, utilizing images of the mirror with a rose gold color scheme. Using
+                        different slides, I created a GIF that displayed all the information regarding the new brand in
+                        a flashing manner that mimicked a fashion runway.
                     </p>
                 </div>
 
                 <div class="project__google-ads margin-top-medium">
-                    <div class="project__google-ads--imgs">
-                        <img src="../img/glammy-imgs/300x600.gif"
+                    <div class="project__google-ads--imgs project__google-ads--large">
+                        <img src="https://imagizer.imageshack.com/img921/8466/ZxOgaA.gif"
                             alt="Google Ad 1">
                     </div>
 
-                    <div class="project__google-ads--imgs">
-                        <img src="../img/glammy-imgs/160x600.gif"
+                    <div class="project__google-ads--imgs project__google-ads--large">
+                        <img src="https://imagizer.imageshack.com/img921/4980/vHt2I3.gif"
                             alt="Google Ad 2">
                     </div>
 
-                    <div class="project__google-ads--imgs project__google-ads--rectangle">
-                        <img src="../img/glammy-imgs/300x250.gif"
+                    <div class="project__google-ads--imgs">
+                        <img src="https://imagizer.imageshack.com/img923/1996/fFkPe8.gif"
                             alt="Google Ad 3">
                     </div>
 
                     <div class="project__google-ads--imgs">
-                        <img src="../img/glammy-imgs/728x90.gif"
+                        <img src="https://imagizer.imageshack.com/img924/981/fZulJO.gif"
                             alt="Google Ad 4">
                     </div>
 
                     <div class="project__google-ads--imgs">
-                        <img src="../img//glammy-imgs/970x250.gif"
+                        <img src="https://imagizer.imageshack.com/img921/8049/2U5D1O.gif"
                             alt="Google Ad 5">
                     </div>
                 </div>
@@ -302,7 +401,15 @@
             <div class="section-title__border"></div>
         </div>
         <div class="contact__container">
-            <a class="contact__email" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
+            <div>
+                <a class="contact__link" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
+            </div>
+            <div>
+                <a class="contact__link" href="tel:562-477-2601">562-477-2601</a>
+            </div>
+            <div>
+                <a class="contact__link" href="https://www.linkedin.com/in/obriengraphics/" target="blank">LinkedIn</a>
+            </div>
             <div class="contact__buttons margin-top-medium">
                 <ul class="contact__social-icons">
                     <li>
@@ -321,8 +428,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/OBrien-Web" target="blank">
+                        <a href="https://github.com/davidobrienweb" target="blank">
                             <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/obrien.ui/" target="blank">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                 </ul>

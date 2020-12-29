@@ -9,27 +9,86 @@
 
     <link rel="stylesheet" href="../sass/main.css">
 
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <title>David O'Brien - Web Designer &amp; Developer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon-16x16.png">
+    <link rel="manifest" href="../img/site.webmanifest">
+
+    <title>David O'Brien - UI / UX Designer</title>
 </head>
 <body>
 
+    <div class="bottom-nav">
+        <div class="bottom-nav__container">
+
+            <div class="bottom-nav__button">
+                <a href="../index.html">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-home.svg" alt="Home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Home
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#about">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-about.svg" alt="About">
+                    </div>
+                    <div class="bottom-nav__text">
+                        About
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#portfolio">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-portfolio.svg" alt="Portfolio">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Portfolio
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="#contact">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-contact.svg" alt="Contact">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Contact
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+
     <div class="top hide">
         <a href="#">
-            <i class="fas fa-chevron-up"></i>
+            <svg width="25" height="12" viewBox="0 0 20.67 11.15">
+                <polygon
+                    points="20.67 10.33 10.34 0 10.33 0 10.33 0 0 10.33 0.82 11.15 10.33 1.65 19.84 11.15 20.67 10.33" />
+            </svg>
         </a>
     </div>
 
     <div class="flex grid-container">
-        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()">☰</a>
+        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()"><img class="nav-menu" src="../img/open-menu-black.svg" alt="☰"></a>
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
             <div class="overlay-content">
                 <ul>
-                    <li><a href="../html/index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
-                    <li><a href="../html/index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
-                    <li><a href="../html/index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
+                    <li><a href="../index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
+                    <li><a href="../index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
+                    <li><a href="../index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
                     </li>
                     <li><a href="#contact" onclick="closeNav()" class="mobile-nav">Contact</a></li>
                 </ul>
@@ -38,9 +97,9 @@
 
         <nav id="nav">
             <ul>
-                <li><a href="../html/index.html" class="desktop-nav">Home</a></li>
-                <li><a href="../html/index.html#about" class="desktop-nav">About</a></li>
-                <li><a href="../html/index.html#portfolio" class="desktop-nav">Portfolio</a></li>
+                <li><a href="../index.html" class="desktop-nav">Home</a></li>
+                <li><a href="../index.html#about" class="desktop-nav">About</a></li>
+                <li><a href="../index.html#portfolio" class="desktop-nav">Portfolio</a></li>
                 <li><a href="#contact" class="desktop-nav">Contact</a></li>
             </ul>
         </nav><!-- #/nav -->
@@ -49,13 +108,13 @@
     <section class="overview margin-top-large">
 
         <div class="overview__title-container margin-bottom-large">
-            <img src="../img/versadesk-logo.svg" class="overview__logo" alt="VersaDesk">
-            <h3 class="overview__h3">Winter Sale</h3>
+            <img src="../img/vsd-wintersale-imgs/versadesk-logo.svg" class="overview__logo" alt="VersaDesk">
+            <h3 class="overview__h3">Winter Holiday Sale</h3>
             
             <div class="buttons-container margin-top-medium">
                 <a href="#landing-page" class="btn btn--grad btn--arrow margin-right">Landing Page</a>
                 <a href="#email" class="btn btn--grad btn--arrow margin-right">Email</a>
-                <a href="#campaign-images" class="btn btn--grad btn--arrow">Campaign Images</a>
+                <a href="#campaign-images" class="btn btn--secondary btn--arrow">Campaign Images</a>
             </div>
         </div>
 
@@ -65,18 +124,34 @@
                 <span class="overview__span">The Client</span>
                 <a class="inline-link" href="https://www.versadesk.com/" target="blank">VersaDesk</a> is an electric
                     standing desk brand under <a class="inline-link" href="https://www.versaproducts.com/"
-                        target="blank">VersaProducts</a> that focuses on promoting health in the workplace. The
-                    original push-button electric sit-to-stand desk riser and leader in standing desk solutions
-                    specializing in innovative designs since 2000. VersaDesk is committed to manufacturing the kind of
-                    ergonomic, user-friendly home and office furniture that will last a lifetime.
+                        target="blank">VersaProducts</a> that focuses on promoting health in the workplace. The original
+                        push-button electric sit-to-stand desk riser and leader in standing desk solutions specializing
+                        in innovative designs since 2000.
             </p>
             <p class="overview__p">
                 <span class="overview__span">The Challenge</span>
-                Design and develop a marketing campaign for the Winter Holiday Sale to promote the brand which includes creating an email, landing page, hero image, top strip banner, and google display ads.
+                VersaDesk needed potential and recurring customers to be made better aware of their sale promotions, as
+                they had not been receiving as much traction as desired. They needed a strategic and themed marketing
+                campaign that would promote all of their winter-specific deals to help close out their Q4 quotas.
             </p>
+             <p class="overview__p">
+                 <span class="overview__span">Target Persona</span>
+                VersaDesk was targeted toward customers that were looking for a standing desk at a reasonable price.
+                They work in the office or at home and may have experienced back or neck pain in the past which has
+                resulted in their interest in purchasing a standing desk.
+             </p>
             <p class="overview__p">
                 <span class="overview__span">Outcome</span>
-                A campaign design for VersaDesk that is unique featuring new designs. In this campaign, I used GIFs animations that bring the design to life.
+                To drive interactions with the VersaDesk product line, I designed and developed a marketing campaign for
+                the Winter Holiday Sale that promoted the brand and drove sales. I generated a new email, landing page,
+                hero image, top strip banner, and google display ads that uniquely featured the new designs promoting
+                the winter sale. In this campaign, I used GIFs animations that brought the design to life and guided the
+                attention of the viewer to key sales points. I used a color palette of red, white, and light blue for
+                the color scheme because they are associated with winter, Christmas, and Hanukkah. The creative
+                materials I generated for this page, ranging from landing pages to banner ads to responsive emails, all
+                had a cohesive look and fun, festive design that makes people want to be a part of VersaDesk. I
+                developed the landing page and emails by generating modern HTML and CSS code using Flexbox that is
+                responsive to all devices, including different smartphones, tablets, and desktops.
             </p>            
             <p class="overview__p">
                 <span class="overview__span">Role</span>
@@ -86,12 +161,8 @@
 
         <div class="overview__responsive-imgs responsive responsive--overview">
             <div class="responsive__images responsive__images--overview">
-                <img class="responsive__images--ipad" src="../img/vsd-wintersale-imgs/VSD-WinterSale-iPad.png" alt="">
-            </div>
-            <div class="responsive__images responsive__images--overview">
-                <img class="responsive__images--mobile"
-                    src="../img/vsd-wintersale-imgs/VSD-WinterSale-mobile.png"
-                    alt="">
+                <img class="responsive__images--img overview-img"
+                    src="../img//vsd-wintersale-imgs/VSD-responsive-landingpage.png" alt="">
             </div>
         </div>
         
@@ -99,7 +170,7 @@
 
     <section class="section-background" id="landing-page">
         <div class="section-title section-title--landing-page margin-top-large margin-bottom-large">
-            <div class="section-title__text white">Landing Page</div>
+            <div class="section-title__text">Landing Page</div>
             <div class="section-title__border"></div>
         </div>
 
@@ -107,30 +178,32 @@
             <div class="project__left">
                 <div class="project__image">
                     <a href="../VSD-Winter_ Holiday_Sale/Landing Page/vsd-winter_sale-landing_page.html" target="blank" class="project__image--a">
-                    <img src="../img/vsd-wintersale-imgs/Winter_Sale-Landing_Page.png" alt="" class="project__image--img"></a>
+                    <img src="../img/vsd-wintersale-imgs/Winter_Sale-Landing_Page.jpg" alt="" class="project__image--img"></a>
                 </div>
             </div>
             <div class="project__right">
                 <div class="project__text">
-                    <p class="project__p white">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all devices.
+                    <p class="project__p">
+                        I used animated snow to give the design a winter feel and bring the landing page to life. In the
+                        product section, I highlighted the features of each desk such as the eclectic touch button or an
+                        adjustable keyboard that animates when a user scrolls to that section. Below the product page
+                        was a thumbnail image of a video promoting the product that users can watch to learn more.
+                        Lastly, an animation of a VersaDesk desk rising and lowering showcases how the desk functions.
                     </p>
                     <div class="buttons-container margin-top-medium">
-                        <a href="../VSD-Winter_ Holiday_Sale/Landing Page/vsd-winter_sale-landing_page.html" target="blank" class="btn btn--arrow btn--white">View Landing Page</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--white">View Code</a>
+                        <a href="../VSD-Winter_ Holiday_Sale/Landing Page/vsd-winter_sale-landing_page.html"
+                            target="blank" class="btn btn--arrow btn--grad margin-right">View Landing Page</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/VSD-Winter_%20Holiday_Sale/Landing%20Page"
+                            target="blank" class="btn btn--arrow btn--secondary">View Code</a>
                     </div>
                 </div>
                 
                 <div class="responsive responsive--project">
                     <div class="responsive__images responsive__images--project">
-                        <a href="../VSD-Winter_ Holiday_Sale/Landing Page/vsd-winter_sale-landing_page.html" target="blank" class="project__image--a">
-                        <img class="responsive__images--ipad" src="../img/vsd-wintersale-imgs/VSD-WinterSale-iPad.png" alt=""></a>
-                    </div>
-                    <div class="responsive__images responsive__images--project">
                         <a href="../VSD-Winter_ Holiday_Sale/Landing Page/vsd-winter_sale-landing_page.html"
                             target="blank" class="project__image--a">
-                        <img class="responsive__images--mobile"
-                            src="../img/vsd-wintersale-imgs/VSD-WinterSale-mobile.png" alt=""></a>
+                        <img class="responsive__images--img"
+                            src="../img//vsd-wintersale-imgs/VSD-responsive-landingpage.png" alt=""></a>
                     </div>
                 </div>
 
@@ -155,27 +228,27 @@
             <div class="project__right">
                 <div class="project__text">
                     <p class="project__p">
-                        I created a landing page for the sale using modern HTML and CSS code that is responsive for all devices.
+                        In the header, I have the desk hanging off the edge which has the illusion of popping off the
+                        page to attract a potential customer. I used animated snow to give the design a winter feel and
+                        keep cohesive with the Winter Sale campaign branding. In the product section, I highlighted the
+                        features of each desk such as the eclectic touch button and the adjustable keyboard. We used the
+                        same gif animation of the desk to show how the desk raises and lowers.
                     </p>
                     <div class="buttons-container margin-top-medium">
                         <a href="../VSD-Winter_ Holiday_Sale/Email/vsd-winter_sale-email.html" target="blank"
-                            class="btn btn--arrow btn--grad">View Email</a>
-                        <a href="#" target="blank" class="btn btn--arrow btn--grad">View Code</a>
+                            class="btn btn--arrow btn--grad margin-right">View Email</a>
+                        <a href="https://github.com/davidobrienweb/Portfolio/tree/master/VSD-Winter_%20Holiday_Sale/Email"
+                            target="blank" class="btn btn--arrow btn--secondary">View Code</a>
                     </div>
                 </div>
 
                 <div class="responsive responsive--project">
                     <div class="responsive__images responsive__images--project">
-                        <a href="../VSD-Winter_ Holiday_Sale/Email/vsd-winter_sale-email.html" target="blank"
-                            class="project__image--a">
-                        <img class="responsive__images--ipad" src="../img/vsd-wintersale-imgs/VSD-WinterSale-iPad.png"
-                            alt=""></a>
-                    </div>
                     <div class="responsive__images responsive__images--project">
                         <a href="../VSD-Winter_ Holiday_Sale/Email/vsd-winter_sale-email.html" target="blank"
                             class="project__image--a">
-                        <img class="responsive__images--mobile"
-                            src="../img/vsd-wintersale-imgs/VSD-WinterSale-mobile.png" alt=""></a>
+                        <img class="responsive__images--img" src="../img//vsd-wintersale-imgs/VSD-responsive-email.png"
+                            alt=""></a>
                     </div>
                 </div>
                 
@@ -185,16 +258,17 @@
 
     <section class="section-background" id="campaign-images">
         <div class="section-title section-title--campaign-images margin-top-large margin-bottom-large">
-            <div class="section-title__text white">Campaign Images</div>
+            <div class="section-title__text">Campaign Images</div>
             <div class="section-title__border"></div>
         </div>
 
         <div class="project">
             <div class="project__container">
                 <div class="project__website-text">
-                    <h4 class="header-h4 white margin-bottom-small">Hero Image / Top Strip Banner</h4>
-                    <p class="project__p white">
-                        The Hero Image and Top Strip Banner were created for the company website and displayed on the home page for the sale to let costumers know there is a sale happening.
+                    <h4 class="header-h4 margin-bottom-small">Hero Image / Top Strip Banner</h4>
+                    <p class="project__p">
+                        I created a hero image and a top strip banner for the company website that was displayed to let
+                        customers know there was a sale happening when they visited the website.
                     </p>
                 </div>
                 <div class="project__img-container margin-top-medium">
@@ -212,32 +286,37 @@
 
             <div class="project__container margin-top-large">
                 <div class="project__website-text">
-                    <h4 class="header-h4 white margin-bottom-small">Google Display Ads</h4>
-                    <p class="project__p white">The Google Display Ads are ads that I created that are displayed on other websites to draw new costumers. I created GIF animations that display different slides with information about the sale happening.
+                    <h4 class="header-h4 margin-bottom-small">Google Display Ads</h4>
+                    <p class="project__p">
+                        To advertise the sale on other websites, gaining new customers who may not have heard of Versa
+                        and therefore weren’t currently visiting our site, I created Google Display ads. I designed
+                        these Google Display Ads to fit 13 different advertisement spec sizes optimized for mobile,
+                        desktop, and tablet. Using different slides, I created a GIF that displayed all the information
+                        regarding the sale.
                     </p>
                 </div>
 
                 <div class="project__google-ads margin-top-medium">
-                        <div class="project__google-ads--imgs project__google-ads--half-page">
+                        <div class="project__google-ads--imgs project__google-ads--large">
                             <img src="../img/vsd-wintersale-imgs/google-display-ads/Half-page--300-x-600.gif" alt="Googel Ad 1">
                         </div>
                         
-                        <div class="project__google-ads--imgs project__google-ads--skyscapper">
+                        <div class="project__google-ads--imgs project__google-ads--large">
                             <img src="../img/vsd-wintersale-imgs/google-display-ads/Wide-skyscraper--160-x-600.gif"
                                 alt="Googel Ad 2">
                         </div>
 
-                        <div class="project__google-ads--imgs project__google-ads--rectangle">
+                        <div class="project__google-ads--imgs">
                             <img src="../img/vsd-wintersale-imgs/google-display-ads/Large-rectangle--336-x-280.gif"
                                 alt="Googel Ad 3">
                         </div>
                         
-                        <div class="project__google-ads--imgs project__google-ads--leaderboard">
+                        <div class="project__google-ads--imgs">
                             <img src="../img/vsd-wintersale-imgs/google-display-ads/Leaderboard--728-x-90.gif"
                                 alt="Googel Ad 4">
                         </div>
                         
-                        <div class="project__google-ads--imgs project__google-ads--billboard">
+                        <div class="project__google-ads--imgs">
                             <img src="../img/vsd-wintersale-imgs/google-display-ads/Billboard--970-x-250.gif"
                                 alt="Googel Ad 5">
                         </div>
@@ -254,7 +333,15 @@
             <div class="section-title__border"></div>
         </div>
         <div class="contact__container">
-            <a class="contact__email" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
+            <div>
+                <a class="contact__link" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
+            </div>
+            <div>
+                <a class="contact__link" href="tel:562-477-2601">562-477-2601</a>
+            </div>
+            <div>
+                <a class="contact__link" href="https://www.linkedin.com/in/obriengraphics/" target="blank">LinkedIn</a>
+            </div>
             <div class="contact__buttons margin-top-medium">
                 <ul class="contact__social-icons">
                     <li>
@@ -273,8 +360,13 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/OBrien-Web" target="blank">
+                        <a href="https://github.com/davidobrienweb" target="blank">
                             <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/obrien.ui/" target="blank">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                 </ul>

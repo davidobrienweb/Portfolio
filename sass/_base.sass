@@ -1,6 +1,7 @@
 // COLOR VARIABLES
 $color-primary: #FF4F4F
-$color-primary-light: #DA1A1A
+$color-primary-light: #ffefef
+$color-background: #BCC7CE
 $color-secondary: #66008B
 $color-black: #262626
 $color-white: #f3f3f3
@@ -9,6 +10,7 @@ $color-white: #f3f3f3
 $font-primary: 'Montserrat', sans-serif
 
 // RESPONSIVE BREAKPOINTS
+$bp-max-largest: 125em // 2000px
 $bp-largest: 75em // 1200px
 $bp-large: 62.5em // 1000px
 $bp-medium: 50em // 800px
@@ -35,6 +37,10 @@ body
     color: $color-black
     font-weight: 300
     line-height: 1.6
+    background: #F3F3F3
+    
+    @media only screen and (max-width: $bp-small)
+        padding-bottom: 80px
 
 p
     margin-bottom: 2rem
@@ -50,6 +56,16 @@ p
         content: ""
         display: table
         clear: both
+
+@mixin flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+.flex-center
+    display: flex
+    justify-content: center
+    align-items: center
 
 .white
     color: $color-white
