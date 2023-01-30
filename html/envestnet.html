@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="image" property="og:image" content="https://iili.io/FlHdZJ.md.jpg">
+    <meta name="author" content="David O'Brien">
+
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../sass/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/svg+xml" href="../img/favicon.svg">
+    <link rel="icon" type="image/png" href="../img/favicon.png">
+
+    <script type='text/javascript'>
+        window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', '6d812b80a4068b75d5b5eaaf13cb3bf2efdb9305');
+    </script>
+    
+    <title>David O'Brien - Product Designer</title>
+</head>
+
+<body>
+
+    <div class="bottom-nav">
+        <div class="bottom-nav__container">
+
+            <div class="bottom-nav__button">
+                <a href="../index.html">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-home.svg" alt="Home">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Home
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#about">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-about.svg" alt="About">
+                    </div>
+                    <div class="bottom-nav__text">
+                        About
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="../index.html#portfolio">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-portfolio.svg" alt="Portfolio">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Portfolio
+                    </div>
+                </a>
+            </div>
+
+            <div class="bottom-nav__button">
+                <a href="#contact">
+                    <div class="bottom-nav__icon">
+                        <img src="../img/icon-contact.svg" alt="Contact">
+                    </div>
+                    <div class="bottom-nav__text">
+                        Contact
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="top hide">
+        <a href="#">
+            <svg width="25" height="12" viewBox="0 0 20.67 11.15">
+                <polygon
+                    points="20.67 10.33 10.34 0 10.33 0 10.33 0 0 10.33 0.82 11.15 10.33 1.65 19.84 11.15 20.67 10.33" />
+            </svg>
+        </a>
+    </div>
+
+    <div class="flex grid-container">
+        <a class="open-nav hide-on-desktop hide-on-tablet" onclick="openNav()"><img class="nav-menu" src="../img/open-menu-black.svg" alt="☰"></a>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <div class="overlay-content">
+                <ul>
+                    <li><a href="../index.html" onclick="closeNav()" class="mobile-nav">Home</a></li>
+                    <li><a href="../index.html#about" onclick="closeNav()" class="mobile-nav">About</a></li>
+                    <li><a href="../index.html#portfolio" onclick="closeNav()" class="mobile-nav">Portfolio</a>
+                    </li>
+                    <li><a href="#contact" onclick="closeNav()" class="mobile-nav">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="../index.html" class="desktop-nav">Home</a></li>
+                <li><a href="../index.html#about" class="desktop-nav">About</a></li>
+                <li><a href="../index.html#portfolio" class="desktop-nav">Portfolio</a></li>
+                <li><a href="#contact" class="desktop-nav">Contact</a></li>
+                <li><a href="../img/DavidOBrien-Resume.pdf" class="btn btn--secondary" download>My Resume</a></li>
+            </ul>
+        </nav><!-- #/nav -->
+    </div>
+
+    <section class="overview margin-top-medium flex-center">
+        <div class="overview__title-container--app margin-bottom-small">
+            <div class="overview__title-container--title">
+                <img src="../img/envestnet/envestnet-logo.png" style="width: 300px;" class="overview__logo" alt="Envestnet">
+                <h3 class="overview__h3 center">Dashboard Design</h3>
+            </div>
+
+            <div class="margin-top-medium app-buttons">
+                <a href="#overview" class="btn btn--arrow btn--secondary">Overview</a>
+                <a href="#projects" class="btn btn--primary btn--arrow">Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-overall app-overall__envestnet">
+        <div class="app-overall--img">
+            <img class="overview-img" src="../img/envestnet/overview-gif.gif" alt="overview-img">
+        </div>
+    </section>  
+
+
+    <div id="overview" class="section-title section-title--overview margin-top-large margin-bottom-medium">
+        <div class="section-title__text">Overview</div>
+        <div class="section-title__border"></div>
+    </div>
+    <section class="overview flex-center">
+        <div class="overview__text-container--app">
+            <br>
+            <p class="overview__p">
+                <span class="overview__span">The Client</span>
+                Working on one of the largest initiatives for a multi-billion dollar fintech company, Envestnet, Inc. is an American financial technology corporation which develops and distributes wealth management technology and products to financial advisors and institutions. Their flagship product is an advisory platform that integrates the services and software used by financial advisors in wealth management.
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">The Challenge</span>
+                Envestnet aimed to improve their legacy Proposal tool with their Next Generation Proposal tool to create an experience that is easy to use and delight users. This is a web application where an advisor can create a financial proposal to prospect clients. Projects would include a workflow from the legacy tool where I would design how it would function in the new tool.
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">The Process</span>
+                Working collaboratively with fellow designers, product managers, and developers in an agile development cycle I rapidly prototyped designs in Figma using our design system and iterated based on feedback from stakeholders. Using project management tools such as Jira and Confluence I managed and tracked my design tasks and requirements. 
+            </p>
+            <p class="overview__p">
+                <span class="overview__span">Role</span>
+                Product Designer
+            </p>
+            <div class="programs">
+                 <p class="overview__p"><span class="overview__span">Programs Used</span></p>
+                 <div class="programs__container">
+                    <div class="programs__item">
+                        <img class="programs__img" src="../img/programs/Figma-logo.svg" alt="Figma">
+                        <p>Figma</p>
+                    </div>
+                    <div class="programs__item">
+                        <img class="programs__img" src="../img/envestnet/atlassian_jira_logo_icon.png" alt="Webflow">
+                        <p>Jira</p>
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="ui-section">
+        <div class="section-title section-title--new-progress-bar margin-top-large margin-bottom-medium">
+            <div class="section-title__text">New progress bar</div>
+            <div class="section-title__border"></div>
+        </div>
+        
+        <section class="overview flex-center">
+            <div class="overview__text-container--app">
+                <p class="overview__p">
+                    An upcoming change to the Next Generation Proposal tool that incorporates all the tools available into a single platform required a new layout change including a new progress bar that previously was a sidebar.  This challenge was given to multiple designers throughout the company that was voted on and my design was selected to be used.
+                    <br><br>
+                    The design includes the proposal name, proposal actions such as edit, copy, and delete, view recent proposals, and the steps in the tool that a user would go through.  The steps component includes the default, completed, and in progress states.
+                </p>
+            </div>
+        </section>
+
+        <div class="flex-center margin-top-small">
+            <div class="large-img">
+                <img src="../img/envestnet/header.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section id="" class="ui-section">
+        <div class="section-title section-title--import-holdings-project margin-top-large margin-bottom-medium">
+            <div class="section-title__text">Import Holdings Project</div>
+            <div class="section-title__border"></div>
+        </div>
+
+        <div class="prototype">
+            <a href="https://www.figma.com/proto/EH8oOLaIBSqMQi4DauRvGp/Envestnet-Prototypes?page-id=3%3A21359&node-id=3%3A32272&viewport=394%2C3167%2C0.33&scaling=min-zoom&starting-point-node-id=3%3A32272"
+                target="blank" class="btn btn--primary btn--arrow">Prototype</a>
+        </div>
+        
+        <section class="overview flex-center">
+            <div class="overview__text-container--app">
+                <p class="overview__p">
+                    A feature from the legacy proposal tool, the import holdings project imported accounts from Client Central into the Next Generation Proposal tool to be used in the user’s proposal. This modal popup was opened from the account setup page and the user can either enter the entire account number and add it or search for the account in the popup. When searching for an account, users can use filters to help find an account, select an account, and add the account using the add button. 
+                    <br><br>
+                    I built out all the states that would happen when using the popup such as the happy path, when a user searches without any filter text inputted, no matches found, and when a scroll bar appears once 10 or more accounts are listed, and a few others. I added annotations to the project to make it easier for developers to know how the popup functions.  Multiple versions of this popup were created as the team thought through the project till we decided with this version.
+                </p>
+            </div>
+        </section>
+
+        <div class="annotations">
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        1
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Search account number text field
+                    </div>
+                    <div class="annotations__subtext">
+                        Input full or partial account number here
+                    </div>
+                </div>               
+            </div>
+
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        2
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Search Icon button
+                    </div>
+                    <div class="annotations__subtext">
+                        Search for the account and bring up the search dropdown
+                    </div>
+                </div>               
+            </div>
+
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        3
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Add button
+                    </div>
+                    <div class="annotations__subtext">
+                        Inputting full account number and selecting Add will add the account number below
+                    </div>
+                </div>               
+            </div>
+
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        4
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Account #s
+                    </div>
+                    <div class="annotations__subtext">
+                        Account numbers that have been found in the search
+                    </div>
+                </div>               
+            </div>
+
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        5
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Dropdowns
+                    </div>
+                    <div class="annotations__subtext">
+                        Dropdowns to filter your search request
+                    </div>
+                </div>               
+            </div>
+
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        6
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Import
+                    </div>
+                    <div class="annotations__subtext">
+                        Import account numbers that are queued up in the modal for upload
+                    </div>
+                </div>               
+            </div>
+
+            <div class="annotations__container">
+                <div class="annotations__left">
+                    <div class="annotations__number">
+                        7
+                    </div>
+                </div>
+                <div class="annotations__right">
+                    <div class="annotations__title">
+                        Import account button
+                    </div>
+                    <div class="annotations__subtext">
+                        Imported account button is now available for selection
+                    </div>
+                </div>               
+            </div>
+
+        </div>
+
+        <div class="flex-center">
+            <div class="margin-top-medium">
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Happy path: Search sequence workflow</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 2.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 3.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 4.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 5.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 6.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/happy flow - 7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Advisor inputs account number into the search box and selects Add</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Advisor inputs account number into the search box and selects Add - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Advisor inputs account number into the search box and selects Add - 2.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Advisor inputs account number into the search box and selects Add - 3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Advisor inputs multiple account numbers into the search box and hits Add</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Advisor inputs multiple account numbers into the search box and hits Add - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Advisor inputs multiple account numbers into the search box and hits Add - 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">No matches found</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/No matches found.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">When a user selects reset from the seach popup</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/When a user selects reset from the seach popup - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/When a user selects reset from the seach popup - 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">When a user searches without any filter text inputted</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/When a user searches without any filter text inputted - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/When a user searches without any filter text inputted - 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Account removed from the list of added accounts</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Account removed from the list of added accounts - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/Account removed from the list of added accounts - 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">A scroll bar appears once 10 or more accounts listed</h2>
+                        <div class="flex-images__row">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/A scroll bar appears once 10 or more accounts listed - 1.png" alt="">
+                            <img class="flex-images__image" src="../img/envestnet/Import Accounts from Client Central - popup/A scroll bar appears once 10 or more accounts listed - 2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            
+
+            
+        </div>
+    </section>
+
+    <section id="" class="ui-section">
+        <div class="section-title section-title--ip-exceptions margin-top-large margin-bottom-medium">
+            <div class="section-title__text">IP Exceptions Project</div>
+            <div class="section-title__border"></div>
+        </div>
+
+        <div class="prototype">
+            <a href="https://www.figma.com/proto/EH8oOLaIBSqMQi4DauRvGp/Envestnet-Prototypes?page-id=3%3A13491&node-id=23%3A30730&viewport=626%2C440%2C0.17&scaling=scale-down&starting-point-node-id=23%3A30730"
+                target="blank" class="btn btn--primary btn--arrow">Prototype</a>
+        </div>
+        
+        <section class="overview flex-center">
+            <div class="overview__text-container--app">
+                <p class="overview__p">
+                    Another feature that was added from the legacy proposal tool, the IP exceptions project added to an existing feature that added a new option to the Security Concentration popup in the Fees page.  
+                    <br><br>
+                    I broke down the user flow showing how the Security Concentration was added, removed, and edited by a user. I included arrows to easily follow the project flow and even linked the prototype for a developer to see how the project will function.
+                </p>
+            </div>
+        </section>
+
+        <div class="flex-center">
+            <div class="margin-top-medium">
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Security Concentration - Added</h2>
+                        <div class="flex-images__row flex-images--env2">
+                            <img class="flex-images__image flex-images--img-38" src="../img/envestnet/Security Concentration/security_concentration--added-1.png" alt="">
+                            <img class="flex-images__image flex-images--img-16" src="../img/envestnet/Security Concentration/security_concentration--added-2.png" alt="">
+                            <img class="flex-images__image flex-images--img-14-5" src="../img/envestnet/Security Concentration/security_concentration--added-3.png" alt="">
+                            <img class="flex-images__image flex-images--img-30" src="../img/envestnet/Security Concentration/security_concentration--added-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Security Concentration - Removed</h2>
+                        <div class="flex-images__row flex-images--env2">
+                            <img class="flex-images__image flex-images--img-32" src="../img/envestnet/Security Concentration/security_concentration--removed-1.png" alt="">
+                            <img class="flex-images__image flex-images--img-14" src="../img/envestnet/Security Concentration/security_concentration--removed-2.png" alt="">
+                            <img class="flex-images__image flex-images--img-30" src="../img/envestnet/Security Concentration/security_concentration--removed-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sequence-row">
+                    <div class="flex-images">
+                        <h2 class="sequence-row__text margin-bottom-small">Security Concentration - Edit</h2>
+                        <div class="flex-images__row flex-images--env2">
+                            <img class="flex-images__image flex-images--img-32" src="../img/envestnet/Security Concentration/security_concentration--edit-1.png" alt="">
+                            <img class="flex-images__image flex-images--img-14" src="../img/envestnet/Security Concentration/security_concentration--edit-2.png" alt="">
+                            <img class="flex-images__image flex-images--img-30" src="../img/envestnet/Security Concentration/security_concentration--edit-3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="contact margin-bottom-large" id="contact">
+        <div class="section-title section-title--contact margin-top-large margin-bottom-large">
+            <div class="section-title__text">contact</div>
+            <div class="section-title__border"></div>
+        </div>
+        <div class="contact__container">
+            <div>
+                <a class="contact__link" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
+            </div>
+            <div>
+                <a class="contact__link" href="tel:562-477-2601">562-477-2601</a>
+            </div>
+            <div>
+                <a class="contact__link" href="https://www.linkedin.com/in/obriengraphics/" target="blank">LinkedIn</a>
+            </div>
+            <div class="contact__buttons margin-top-medium">
+                <ul class="contact__social-icons">
+                    <li>
+                        <a href="mailto:davidobrienweb@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:562-477-2601">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/obriengraphics/" target="blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/davidobrienweb" target="blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/obrien.ui/" target="blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="//code.jquery.com/jquery-3.0.0.min.js"></script> <!-- add jquery library-->
+    <script src="https://kit.fontawesome.com/70b7312e2a.js"></script> <!-- awesome font library-->
+
+    <script src="../js/js.js"></script>
+
+    <script type="text/javascript">
+        (function(w, d, a){
+            w.__beusablerumclient__ = {
+                load : function(src){
+                    var b = d.createElement("script");
+                    b.src = src; b.async=true; b.type = "text/javascript";
+                    d.getElementsByTagName("head")[0].appendChild(b);
+                }
+            };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+        })(window, document, "//rum.beusable.net/load/b221208e044255u945");
+    </script>
+
+</body>
+
+</html>
