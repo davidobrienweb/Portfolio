@@ -1,26 +1,64 @@
 .container
-    height: 73.5vw
-    margin: 1vw auto
-    height: 1100px
-    max-width: 800px
-    overflow: hidden
-    width: 98vw
+    &--usadodgeball
+        height: 73.5vw
+        margin: 1vw auto
+        height: 1100px
+        max-width: 800px
+        overflow: hidden
+        width: 98vw
 
-    @media only screen and (max-width: $bp-small)
-        height: 500px
+        @media only screen and (max-width: $bp-small)
+            height: 500px
+            width: 100%
+
+    &--lastrampas
+        height: 73.5vw
+        margin: 1vw auto
+        height: 1620px
+        max-width: 720px
+        overflow: hidden
+        width: 98vw
+
+        @media only screen and (max-width: $bp-small)
+            height: 800px
+            width: 100%
+
+.figure
+    &--usadodgeball
+        background-image: url(../img/usa-dodgeball/Home-desktop-After.jpg)
+        background-size: cover
+        font-size: 0
+        height: 100%
+        margin: 0
+        position: relative
         width: 100%
 
-.container figure
-    background-image: url(../img/usa-dodgeball/Home-desktop-After.jpg)
-    background-size: cover
-    font-size: 0
-    height: 100%
-    margin: 0
-    position: relative
-    width: 100%
+    &--lastrampas
+        background-image: url(../img/las-trampas/las_trampas-desktop-compare.jpg)
+        background-size: cover
+        font-size: 0
+        height: 100%
+        margin: 0
+        position: relative
+        width: 100%
 
-#compare
+.compare--usadodgeball
     background-image: url(../img/usa-dodgeball/Home-desktop-Before.jpg)
+    background-size: cover
+    bottom: 0
+    border-right: 5px solid rgba(255, 255, 255, 0.7)
+    box-shadow: 10px 0 15px -13px #000
+    height: 100%
+    max-width: 98.6%
+    min-width: 0.6%
+    overflow: visible
+    position: absolute
+    width: 50%
+    animation: first 2s 1 normal ease-in-out 0.1s
+    -webkit-animation: first 2s 1 normal ease-in-out 0.1s
+
+.compare--lastrampas
+    background-image: url(../img/las-trampas/las_trampas-desktop-old.jpg)
     background-size: cover
     bottom: 0
     border-right: 5px solid rgba(255, 255, 255, 0.7)

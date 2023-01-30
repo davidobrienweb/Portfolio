@@ -1,15 +1,21 @@
 .btn
-    padding: 1.3rem 3rem
+    padding: 1.2rem 2.5rem
     font-size: 1.6rem
     text-decoration: none
-    border-radius: 5rem
+    border-radius: 1rem
     transition: all .3s ease-in-out
     text-align: center
     margin-top: 1rem
-    min-width: 200px
+    min-width: 20rem
+    cursor: pointer
+
+    @media only screen and (max-width: $bp-medium)
+        font-size: 1.6rem
+        padding: 1rem 2rem
+        min-width: 15rem
 
     
-    &--grad
+    &--primary
         background: $color-primary
         color: $color-white
         //background-image: linear-gradient(to right, $color-primary 0%, $color-primary-light 51%, $color-primary 100%)
@@ -18,7 +24,8 @@
         border: 3px solid $color-primary
         
         &:hover
-            background-position: right center
+            background: $color-primary-dark
+            border: 3px solid $color-primary-dark
 
     &--arrow 
         &::after
@@ -30,6 +37,9 @@
             font-size: 1.25rem
             left: 0
             transition: all .1s ease-in-out
+
+            @media only screen and (max-width: $bp-medium)
+                margin-left: 2rem
 
         &:hover::after
             left: .35em 
@@ -45,11 +55,14 @@
             top: -.1em
             transition: all .1s cubic-bezier(.09,1.69,1,-0.63)
 
+            @media only screen and (max-width: $bp-medium)
+                margin-left: 2rem
+
         &:hover::after
             top: .1em 
 
     &--resume
-        text-transform: uppercase
+        // text-transform: uppercase
 
         &::after
             content: '\f019'
@@ -74,6 +87,11 @@
     &--secondary
         color: $color-primary
         border: 3px solid $color-primary
+
+        &:hover
+            background: $color-primary
+            border: 3px solid $color-primary
+            color: $color-white
 
 .margin-right
     margin-right: 2rem
@@ -112,12 +130,14 @@
         flex-wrap: wrap
         justify-content: center
 
-    a:first-child
-        @media only screen and (max-width: 544px)
-            margin-bottom: 1rem
+    // a:first-child
+    //     @media only screen and (max-width: 544px)
+    //         margin-bottom: 1rem
 
+    .center
+        margin: 0 auto
+        
     .btn
-        margin: 0
         z-index: 5
 
         @media only screen and (max-width: $bp-small)

@@ -1,7 +1,7 @@
 /* ----- NAV BAR ----- */    
     
 nav
-    background: #ffffff
+    //background: #ffffff
     margin: 2rem auto
     display: inline-block
     z-index: 99
@@ -19,6 +19,7 @@ nav
     width: 100%
     z-index: 9
     margin: 0 auto
+    margin-top: 1rem
     
     @media only screen and (max-width: $bp-large)
         display: none
@@ -55,7 +56,7 @@ nav
                 &:hover
 
                     &::after
-                        margin-bottom: -.5rem
+                        margin-bottom: -.75rem
                         visibility: visible
                         -webkit-transform: scaleX(1)
                         transform: scaleX(1)
@@ -102,12 +103,12 @@ nav
     top: 0
     right: 0
     background-color: $color-primary
-    background: rgba($color-primary,.9))
+    background: rgba($color-primary,.9)
     background: linear-gradient(to right top,rgba($color-primary, .9), rgba($color-secondary,.9))
     overflow-x: hidden
     transition: 0.5s
     z-index: 99
-g
+
     li
         margin: 0 auto
         text-align: right
@@ -122,15 +123,15 @@ g
         transition: 0.3s
         color: $color-white
         padding-bottom: 0
-        -webkit-text-fill-color: transparent
-        -webkit-text-stroke-width: 2px
+        // -webkit-text-fill-color: transparent
+        // -webkit-text-stroke-width: 2px
         transform: rotate(5deg)
         margin-right: 10%
         transition: all .3s
 
         @media only screen and (max-width: $bp-medium)
             font-size: 7.5rem
-            -webkit-text-stroke-width: 1px
+            // -webkit-text-stroke-width: 1px
 
         @media only screen and (max-width: $bp-small)
             font-size: 6rem
@@ -211,7 +212,7 @@ g
         width: 21%
         
         a
-            padding: 7px 0
+            padding: 12px 0 20px 0
 
     &__icon
         @include flex-center

@@ -45,7 +45,7 @@
     &__p
         max-width: 75rem
 
-        @media only screen and (max-width: $bp-large)
+        //@media only screen and (max-width: $bp-large)
             max-width: 45rem
 
         @media only screen and (max-width: $bp-medium)
@@ -74,7 +74,7 @@
             max-width: 35rem
 
         @media only screen and (max-width: $bp-medium)
-            max-width: 35rem
+            max-width: 25rem
             margin-left: auto
             margin-right: auto
             display: flex
@@ -96,6 +96,7 @@
 
         &--app
             width: 420px
+            margin-top: 5rem
 
         &--title
             display: flex
@@ -204,6 +205,8 @@
 
     &__flex
         display: flex
+        max-width: 200rem
+        margin: 0 auto
 
         @media only screen and (max-width: $bp-medium)
             flex-wrap: wrap
@@ -212,6 +215,7 @@
         width: 50%
         display: flex
         justify-content: flex-end
+        align-items: flex-start
         margin-right: 5rem
 
         @media only screen and (max-width: $bp-medium)
@@ -280,7 +284,7 @@
     &__p
         
         @media only screen and (min-width: $bp-largest)
-            width: 600px
+           // width: 600px
 
         @media only screen and (max-width: $bp-medium)
             width: 100%
@@ -355,6 +359,13 @@
                 float: left
 
 
+    &__ul
+        padding-left: 3rem
+
+    &__li
+        font-size: 1.6rem
+        line-height: 2
+        margin-bottom: 1rem
 
 
 .overview
@@ -386,7 +397,23 @@
     @media only screen and (max-width: $bp-largest)
         margin-top: 30rem
 
+    &__envestnet
+        @media only screen and (max-width: $bp-small)
+            margin-top: 23rem
+
     &--video
+        margin-top: -22.5rem
+
+        @media only screen and (min-width: $bp-max-largest)
+            margin-top: -27.2rem
+
+        @media only screen and (max-width: $bp-largest)
+            margin-top: -28.1rem
+
+        @media only screen and (max-width: $bp-small)
+            margin-top: -20rem
+
+    &--img
         margin-top: -22.5rem
 
         @media only screen and (min-width: $bp-max-largest)
@@ -441,6 +468,19 @@
             @media only screen and (max-width: $bp-small)
                 width: 100% !important
 
+.overview-img
+    max-width: 1000px
+    margin: 0 auto
+    text-align: center
+    width: 95%
+    display: flex
+
+    @media only screen and (max-width: $bp-medium)
+        width: 100%
+        padding: 1rem
+
+
+
 .app-row
     @include clearfix
     display: flex
@@ -448,12 +488,17 @@
     margin: 15rem auto
     overflow: hidden
     flex-wrap: wrap
+    width: 90%
+    max-width: 120rem
 
     &__usa
-        max-width: 1500px
+        max-width: 150rem
 
         @media only screen and (max-width: $bp-max-largest) 
             max-width: 1000px
+
+    &__dj0
+        max-width: 110rem
 
     .img
         img
@@ -618,3 +663,129 @@
         width: 100%
         height: auto
         min-height: 200px
+
+
+.flex-images
+    margin: 0 auto
+    width: 95%
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        // justify-content: flex-start
+        align-items: flex-start
+        max-width: 200rem
+        margin: 0 auto
+
+    &__text
+
+    &__image
+        width: 45rem
+        padding-bottom: 2rem
+
+        @media only screen and (max-width: $bp-small)
+            width: 50%
+
+    &--env2
+        gap: 0.5rem
+
+    &--img-38
+        width: 38%
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+
+    &--img-16
+        width: 16%
+
+        @media only screen and (max-width: $bp-small)
+            width: 45%
+
+    &--img-14-5
+        width: 14.5%
+
+        @media only screen and (max-width: $bp-small)
+            width: 41%
+
+    &--img-30
+        width: 30%
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+
+    &--img-32
+        width: 32%
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+
+    &--img-14
+        width: 14%
+
+        @media only screen and (max-width: $bp-small)
+            width: 45%
+
+.sequence-row
+    margin-bottom: 3rem
+
+    @media only screen and (max-width: $bp-small)
+        margin-bottom: 1rem
+
+    &__text
+        border-bottom: 5px solid $color-pink
+        padding-bottom: .5rem
+
+
+.annotations
+    margin: 0 auto
+    margin-top: 10rem
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: flex-start
+    max-width: 1900px
+    width: 95%
+    margin-bottom: 3rem
+
+    &__container
+        width: 25%
+        display: flex
+        margin-right: 10rem
+        border-bottom: 1px solid $color-gray
+        margin-bottom: 1rem
+        padding-bottom: 1rem
+
+        @media only screen and (max-width: $bp-large)
+            width: 43%
+            margin-right: 5rem
+
+        @media only screen and (max-width: $bp-small)
+            width: 100%
+            margin-right: 0
+
+        // &:not(:last-child)
+        //     border-bottom: 1px solid $color-gray
+        //     margin-bottom: 2rem
+        //     padding-bottom: 1rem
+
+    &__left
+        padding-right: 1rem
+
+    &__number
+        background: $color-pink
+        color: $color-white
+        width: 1.6rem
+        height: 1.6rem
+        border-radius: 100%
+        font-size: 1rem
+        font-weight: 700
+        text-align: center
+        margin-top: .5rem
+        // padding: 8px
+
+    &__title
+        font-size: 1.6rem
+        font-weight: 700
+    
+    &__subtext
+        font-size: 1.2rem

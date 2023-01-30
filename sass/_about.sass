@@ -25,6 +25,9 @@
         display: inline-block
         margin-bottom: 1rem
 
+        &:hover
+            color: $color-primary-dark
+
     &__profile-pic 
         width: 50%
         display: flex
@@ -51,7 +54,8 @@
     position: relative
     max-width: 200rem
     margin: 0 auto
-    margin-top: -3rem
+    //margin-top: -3rem
+    margin-bottom: 20rem
 
     @media only screen and (max-width: $bp-medium)
         margin-top: 5rem
@@ -85,6 +89,10 @@
         display: flex
         justify-content: center
         align-items: center  
+        height: 8.5rem
+
+        img
+            width: 11rem
 
     &__text
         margin-top: 2rem
