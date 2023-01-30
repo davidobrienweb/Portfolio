@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,21 +9,30 @@
     <meta name="image" property="og:image" content="https://iili.io/FlHdZJ.md.jpg">
     <meta name="author" content="David O'Brien">
     
-
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
     <link rel="stylesheet" href="../sass/main.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/apple-icon.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/site.webmanifest">
+    <link rel="manifest" href="img/site.webmanifest"> -->
 
-    <title>David O'Brien - UI / UX Designer</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <script type='text/javascript'>
+        window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+        })(document);
+        smartlook('init', '6d812b80a4068b75d5b5eaaf13cb3bf2efdb9305');
+    </script>
+
+    <title>David O'Brien - Product Designer</title>
 </head>
 <body>
 
@@ -99,23 +109,31 @@
             </div>
         </div>
 
+
         <nav id="nav" class="nav-home">
-            <ul>
-                <li><a href="index.html" class="desktop-nav">Home</a></li>
-                <li><a href="#about" class="desktop-nav">About</a></li>
-                <li><a href="#portfolio" class="desktop-nav">Portfolio</a></li>
-                <li><a href="#contact " class="desktop-nav">Contact</a></li>
-            </ul>
-        </nav><!-- #/nav -->
+            <!-- <div class="logo">
+                <img width="60px" src="img/logo.svg" alt="">
+            </div> -->
+
+            <div class="nav__links">
+                <ul>
+                    <li><a href="index.html" class="desktop-nav">Home</a></li>
+                    <li><a href="#about" class="desktop-nav">About</a></li>
+                    <li><a href="#portfolio" class="desktop-nav">Portfolio</a></li>
+                    <li><a href="#contact " class="desktop-nav">Contact</a></li>
+                    <li><a href="../img/DavidOBrien-Resume.pdf" class="btn btn--secondary" download>My Resume</a></li>
+                </ul>
+            </div>
+        </nav><!-- #/nav -->            
     </div>
 
     <header class="header">
         <div class="header__container">
             <div class="header__text">
                 <h1 class="header__h1">David O'Brien</h1>
-                <h2 class="header__h2">Designing Experiences</span></h2>
+                <h2 class="header__h2">Designing Experiences</h2>
                 <div class="margin-top-medium header__btn">
-                    <a href="#portfolio" class="btn btn--grad btn--arrow-down">Portfolio</a>
+                    <a href="#portfolio" class="btn btn--primary btn--arrow-down">Portfolio</a>
                 </div>
             </div>
             <div class="header__img blob">
@@ -126,39 +144,102 @@
         </div>
     </header>
 
-    <div class="skills">
-            <div class="skills__container">
-                <div class="skills__box">
-                    <div class="skills__img">
-                        <img src="img/uiux-icon.svg" alt="">
-                    </div>
-                    <div class="skills__text">
-                        <h2>UI / UX Design</h2>
-                        <p>Web Pages, Landing Pages, Emails, Wireframing, User Flow, Prototyping, Mobile App Design</p>
-                    </div>
-                </div>
-
-                <div class="skills__box">
-                    <div class="skills__img">
-                        <img src="img/dev-icon.svg" alt="">
-                    </div>
-                    <div class="skills__text">
-                        <h2>Frontend Development</h2>
-                        <p>HTML, CSS, Animation, WordPress, Responsive Websites</p>
-                    </div>
-                </div>
-
-                <div class="skills__box">
-                    <div class="skills__img">
-                        <img src="img/marketing-icon.svg" alt="">
-                    </div>
-                    <div class="skills__text">
-                        <h2>Marketing Design</h2>
-                        <p>Google Display Ads, Social Media, Photo Editing, Print Materials</p>
-                    </div>
-                </div>
-            </div>    
+    <section class="section-background" id="portfolio">
+        <div class="section-title section-title--portfolio margin-top-small margin-bottom-large">
+            <div class="section-title__text">Portfolio</div>
+            <div class="section-title__border"></div>
         </div>
+
+        <div class="portfolio">
+            <div class="portfolio__section">
+
+                <div class="portfolio__project" >
+                    <a href="html/envestnet.html">
+                        <div class="portfolio__cover"></div>
+                        <div class="portfolio__img">
+                            <img src="../img/envestnet/header-image.jpg">
+                        </div>
+                        <div class="portfolio__text">
+                            <h3>Envestnet</h3>
+                            <h4>Financial Services Company</h4>
+                            <h5>Dashboard Design</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio__project" >
+                    <a href="html/usa-dodgeball.html">
+                        <div class="portfolio__cover"></div>
+                        <div class="portfolio__img">
+                            <img src="img/usa-dodgeball/portfolio-image-usadodgeball.jpg">
+                        </div>
+                        <div class="portfolio__text">
+                            <h3>USA Dodgeball</h3>
+                            <h4>Sports Community</h4>
+                            <h5>Website Redesign</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="portfolio__project" >
+                    <a href="html/seekmysoulmate.html">
+                        <div class="portfolio__cover"></div>
+                        <div class="portfolio__img">
+                            <img src="img/seekmysoulmate/header-image.jpg">
+                        </div>
+                        <div class="portfolio__text">
+                            <h3>Seek my Soulmate</h3>
+                            <h4>Dating App</h4>
+                            <h5>App Design</h5>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- <div class="portfolio__project" >
+                    <a href="html/dj0threads-app.html">
+                        <div class="portfolio__cover"></div>
+                        <div class="portfolio__img">
+                            <img src="../img/dj0/dj0-cover-img.jpg" alt="">
+                        </div>
+                        <div class="portfolio__text">
+                            <h3>DJ0 Threads</h3>
+                            <h4>Staff App</h4>
+                            <h5>App Design & Development</h5>
+                        </div>
+                    </a>
+                </div> -->
+
+                <!-- <div class="portfolio__project" >
+                    <a href="html/thecupandthecork.html">
+                        <div class="portfolio__cover"></div>
+                        <div class="portfolio__img">
+                            <img src="img/thecupandthecork/portfolio-image-cupandthecork.jpg">
+                        </div>
+                        <div class="portfolio__text">
+                            <h3>The Cup & The Cork</h3>
+                            <h4>Podcast App</span></h4>
+                            <h5>App Design</h5>
+                        </div>
+                    </a>
+                </div> -->
+
+                <!-- <div class="portfolio__project" >
+                    <a href="html/lastrampas.html">
+                        <div class="portfolio__cover"></div>
+                        <div class="portfolio__img">
+                            <img src="../img/las-trampas/portfolio-image-lastrampas.jpg" alt="">
+                        </div>
+                        <div class="portfolio__text">
+                            <h3>Las Trampas</h3>
+                            <h4>Disability Services</h4>
+                            <h5>Website Redesign</h5>
+                        </div>
+                    </a>
+                </div> -->
+
+            </div>               
+        </div>
+    </section>
 
     <section class="about" id="about">
         <div class="section-title section-title--about margin-top-large margin-bottom-large">
@@ -172,10 +253,16 @@
                 </div>
             </div>
             <div class="about__text">
-                <p>I am a Los Angeles based UI / UX Designer specializing in creating stunning web, mobile, and app layouts, with a focus on UX & UI paradigms. Effective email marketing campaigns, online advertisement, and print material with eye-catching designs are my cup of tea. I’ve been driven by detail throughout my 6+ years working as a designer, and I enjoy being creative every day and solving problems with the tools of design.</p>
+                <p>I am a Los Angeles based Product Designer and I specialize in creating dashboard layouts for SAAS products and user experience-centric mobile apps. I have been working as a designer for over 8 years and I enjoy bringing both my creative and technical skills to my projects.  </p>
                 
-                <p>In my free time, I enjoy playing dodgeball, managing a dodgeball league, going to the beach, playing video games, and working out at the gym.</p>
+                <p>In my free time, I enjoy playing dodgeball and kickball, going to the beach, playing video games, and working out at the gym.</p>
                 
+<!-- 
+                <p>I am a Los Angeles based Full-Stack Designer specializing in User Interface Design, User Experience Design, and Front End Development. Creating stunning web, mobile, and app layouts, online advertisements, effective email marketing campaigns, and print material with eye-catching designs are my cup of tea. I’ve been driven by detail throughout my 7+ years working as a designer, and I enjoy being creative every day and solving problems with the tools of design.</p>
+                
+                <p>In my free time, I enjoy playing dodgeball and kickball, managing a dodgeball league, going to the beach, playing video games, hosting themed parties, and working out at the gym.</p> -->
+
+
                 <p class="about__contact"><strong>Feel free to contact me:</strong></p>
                 <div>
                     <a href="mailto:davidobrienweb@gmail.com" class="about__link">davidobrienweb@gmail.com</a>
@@ -188,109 +275,44 @@
                 </div>
 
                 <div class="resume-container margin-top-medium">
-                    <a href="../img/DavidOBrien-Resume.pdf" class="btn btn--grad btn--resume" download>My Resume</a>
+                    <a href="../img/DavidOBrien-Resume.pdf" class="btn btn--primary btn--resume" download>My Resume</a>
                 </div>
             </div>
         </div>
+    </section>
 
-     </section>
-
-    <section class="section-background" id="portfolio">
-        <div class="section-title section-title--portfolio margin-top-large margin-bottom-large">
-            <div class="section-title__text">Portfolio</div>
-            <div class="section-title__border"></div>
-        </div>
-
-        <div class="portfolio">
-            <div class="portfolio__section">
-
-                <div class="portfolio__project aos-init aos-animate" data-aos="fade-up">
-                    <a href="html/usa-dodgeball.html">
-                        <div class="portfolio__cover"></div>
-                        <div>
-                            <img class="portfolio__img" src="img/usa-dodgeball/cover-photo-desktop.jpg">
-                        </div>
-                        <div class="portfolio__text">
-                            <h3>USA Dodgeball</h3>
-                            <h4>Sports Community Website</h4>
-                            <h5>Website Redesign</h5>
-                        </div>
-                    </a>
+    <section class="skills">
+        <div class="skills__container">
+            <div class="skills__box">
+                <div class="skills__img">
+                    <img src="img/uiux-icon.svg" alt="">
                 </div>
-
-                <div class="portfolio__project aos-init aos-animate" data-aos="fade-up">
-                    <a href="html/thecupandthecork.html">
-                        <div class="portfolio__cover"></div>
-                        <div>
-                            <img class="portfolio__img" src="img/thecupandthecork/website-main-img.png">
-                        </div>
-                        <div class="portfolio__text">
-                            <h3>The Cup & The Cork</h3>
-                            <h4>Podcast App</span></h4>
-                            <h5>App Design</h5>
-                        </div>
-                    </a>
+                <div class="skills__text">
+                    <h2>UI / UX Design</h2>
+                    <p>Mobile App Design, Dashboards, Web Pages, Landing Pages, Emails, Wireframing, User Flow, Prototyping</p>
                 </div>
+            </div>
 
-                    <div class="portfolio__project aos-init aos-animate" data-aos="fade-up">
-                        <a href="html/ZG-landingpage.html">
-                            <div class="portfolio__cover"></div>
-                            <div>
-                                <img class="portfolio__img" src="../img/zerogravity/zg-office-fitness-desktop.jpg">
-                            </div>
-                            <div class="portfolio__text">
-                                <h3>Zero Gravity</h3>
-                                <h4>Space Planning &amp; <span>Office Fitness</span></h4>
-                                <h5>Landing Page</h5>
-                            </div>
-                        </a>
-                    </div>
-
-                <div class="portfolio__project aos-init aos-animate" data-aos="fade-up">
-                    <a href="html/Glammy-glow.html">
-                        <div class="portfolio__cover"></div>
-                        <div>
-                            <img class="portfolio__img" src="../img/glammy-imgs/Glammy-LandingPage.jpg">
-                        </div>
-                        <div class="portfolio__text">
-                            <h3>GLAMMY</h3>
-                            <h4>Say Hello to Glammy</h4>
-                            <h5>Email / Landing Page</h5>
-                        </div>
-                    </a>
+            <div class="skills__box">
+                <div class="skills__img">
+                    <img src="img/dev-icon.svg" alt="">
                 </div>
-
-                <div class="portfolio__project aos-init aos-animate" data-aos="fade-up">
-                    <a href="html/VT-leads-landingpage.html">
-                        <div class="portfolio__cover"></div>
-                        <div>
-                            <img class="portfolio__img" src="../img/versatables/VT-leads-landingpage.jpg" alt="">
-                        </div>
-                        <div class="portfolio__text">
-                            <h3>VersaTables</h3>
-                            <h4>Sales Landing Page</h4>
-                            <h5>Landing Page</h5>
-                        </div>
-                    </a>
+                <div class="skills__text">
+                    <h2>Frontend Development</h2>
+                    <p>HTML5, CSS3, Responsive Websites, Mobile App Development, Animation, Webflow, Shopify, Github</p>
                 </div>
+            </div>
 
-                <div class="portfolio__project aos-init aos-animate" data-aos="fade-up">
-                    <a href="html/VSD-winter-sale.html">
-                        <div class="portfolio__cover"></div>
-                        <div>
-                            <img class="portfolio__img"
-                                src="../img/vsd-wintersale-imgs/Winter_Sale-Landing_Page.jpg" alt="">
-                        </div>
-                        <div class="portfolio__text">
-                            <h3>VersaDesk</h3>
-                            <h4>Winter Holiday Sale</h4>
-                            <h5>Email / Landing Page</h5>
-                        </div>
-                    </a>
+            <div class="skills__box">
+                <div class="skills__img">
+                    <img src="img/marketing-icon.svg" alt="">
                 </div>
-
-            </div>               
-        </div>
+                <div class="skills__text">
+                    <h2>Marketing Design</h2>
+                    <p>Google Display Ads, Social Media, Photo Editing, Print Materials</p>
+                </div>
+            </div>
+        </div>    
     </section>
 
     <footer class="contact margin-bottom-large" id="contact">
@@ -298,7 +320,25 @@
             <div class="section-title__text">contact</div>
             <div class="section-title__border"></div>
         </div>
+    
         <div class="contact__container">
+
+            <!--
+            <div class="contact__form margin-bottom-medium">
+
+                    <form id="contact-form" method="post" action="">
+                        <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+
+                        <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+
+                        <textarea name="message" class="form-control" placeholder="Message" rows="4"></textarea><br>
+
+                        <input type="submit" class="form-control submit btn btn--primary" value="Send Message">
+                    </form>
+            </div>
+
+            -->
+
             <div>
                 <a class="contact__link" href="mailto:davidobrienweb@gmail.com">davidobrienweb@gmail.com</a>
             </div>
@@ -345,10 +385,20 @@
 
     <script src="https://kit.fontawesome.com/70b7312e2a.js"></script> <!-- awesome font library-->
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
     <script src="../js/js.js"></script>
-    
+
+    <script type="text/javascript">
+        (function(w, d, a){
+            w.__beusablerumclient__ = {
+                load : function(src){
+                    var b = d.createElement("script");
+                    b.src = src; b.async=true; b.type = "text/javascript";
+                    d.getElementsByTagName("head")[0].appendChild(b);
+                }
+            };w.__beusablerumclient__.load(a + "?url=" + encodeURIComponent(d.URL));
+        })(window, document, "//rum.beusable.net/load/b221208e044255u945");
+    </script>
+            
 
     
 
